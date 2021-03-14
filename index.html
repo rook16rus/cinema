@@ -2,11 +2,367 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Продажа билетов в кино в Иннополисе</title>
 </head>
 <body>
+<header class="main-header">
+    <nav class="main-nav container">
+        <a href="#" class="logo">
+            <img src="images/Logo-Innopolis-University.png" width="156" height="40"
+                 alt="Логотип университета Иннополис">
+        </a>
+        <div class="main-nav-wrapper">
+            <div class="main-nav-row">
+                <ul class="header-contact-list">
+                    <li class="header-contact-item">+7 (800) 355 12-56</li>
+                    <li class="header-contact-item">kino@innopolis.ru</li>
+                    <li class="header-contact-item">ул.Спортивная д.1</li>
+                </ul>
+                <a href="tel:88005553535" class="button white-button">Заказать звонок</a>
+            </div>
+            <div class="main-nav-row">
+                <ul class="navbar-list">
+                    <li class="navbar-item">Event details</li>
+                    <li class="navbar-item">Speakers</li>
+                    <li class="navbar-item">Sponsors</li>
+                    <li class="navbar-item">Past events</li>
+                    <li class="navbar-item">Contact</li>
+                </ul>
+            </div>
+        </div>
+        <label for="language-select" class="visually-hidden">Выберите язык</label>
+        <select name="language-select" id="language-select" class="language-select">
+            <option value="RU" selected>RU</option>
+            <option value="EN">EN</option>
+        </select>
+    </nav>
+</header>
 
+<main class="main-page">
+    <h1 class="visually-hidden">Главная страница сайта по продаже билетов в Иннополисе</h1>
+    <section class="promo">
+        <h2 class="section-title promo-title">Закажите билет в кино</h2>
+        <p class="promo-description">Всем покупателям подарок!</p>
+        <div class="welcome-block">
+            <h3>Добро пожаловать!</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt.
+            </p>
+        </div>
+    </section>
+    <section class="features container">
+        <h2 class="section-title promo-title">Почему мы?</h2>
+        <ul class="features-list">
+            <li class="features-item">
+                <img src="images/feature-photo-1.jpg" width="245" height="169" alt="Большие экраны">
+                <h3>Большие экраны</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </li>
+            <li class="features-item">
+                <img src="images/feature-photo-2.jpg" width="245" height="169" alt="Объёмный звук">
+                <h3>Объёмный звук</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </li>
+            <li class="features-item">
+                <img src="images/feature-photo-3.jpg" width="245" height="169" alt="Удобные кресла">
+                <h3>Удобные кресла</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </li>
+            <li class="features-item">
+                <img src="images/feature-photo-4.jpg" width="245" height="170" alt="Уютная атмосфера">
+                <h3>Уютная атмосфера</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </li>
+            <li class="features-item">
+                <img src="images/feature-photo-5.jpg" width="245" height="171" alt="Полное погружение">
+                <h3>Полное погружение</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </li>
+            <li class="features-item">
+                <img src="images/feature-photo-6.jpg" width="245" height="169" alt="Поцелуи на заднем ряду">
+                <h3>Поцелуи на заднем ряду</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </li>
+        </ul>
+    </section>
+    <section class="films-timetable container">
+        <h2 class="section-title films-timetable-title">Выберите фильм</h2>
+        <table class="films-table">
+            <thead>
+            <tr>
+                <th>Начало сеанса</th>
+                <th>Название фильма</th>
+                <th>Жанр</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>10:00</td>
+                <td>Человек-паук</td>
+                <td>Фантастика, боевик, приключения</td>
+            </tr>
+            <tr>
+                <td>12:00</td>
+                <td>Собачья жизнь 2</td>
+                <td>Фэнтэзи, драма, комедия</td>
+            </tr>
+            <tr>
+                <td>14:00</td>
+                <td>История игрушек 4</td>
+                <td>Мультфильм, фэнтэзи, комедия</td>
+            </tr>
+            <tr>
+                <td>16:00</td>
+                <td>Люди в чёрном: Интэрнэшнл</td>
+                <td>Фантастика, боевик, комедия</td>
+            </tr>
+            </tbody>
+        </table>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+    </section>
+    <section class="present">
+        <div class="container">
+            <h2 class="section-title present-title">Подарок каждому!</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
+                non quam. Ut pharetra sit amet aliquam id diam maecenas.
+            </p>
+            <p>
+                Nunc vel risus commodo viverra maecenas accumsan. Morbi enim nunc faucibus a. Mauris commodo quis
+                imperdiet massa.Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam vestibulum
+                morbi blandit cursus risus at ultrices mi tempus.
+            </p>
+            <p>
+                Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra
+                sit amet aliquam id diam maecenas. Sed elementum tempus egestas sed sed risus pretium quam vulputate.
+                Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Facilisi cras fermentum odio eu
+                feugiat pretium nibh. Eu nisl nunc mi ipsum. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum.
+            </p>
+            <a href="#" class="button green-button">Получить подарок</a>
+        </div>
+    </section>
+    <section class="films-catalog container">
+        <h2 class="section-title film-catalog-title">Фильмы</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non
+            quam.
+        </p>
+        <ul class="films-catalog-list">
+            <li class="films-catalog-item">
+                <h3>Выживший</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar
+                    etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.
+                </p>
+                <img src="images/film-photo-1.jpg" width="284" height="284" alt="Обложка фильма ">
+            </li>
+            <li class="films-catalog-item">
+                <img src="images/film-photo-2.jpg" width="284" height="284" alt="Обложка фильма ">
+            </li>
+            <li class="films-catalog-item">
+                <img src="images/film-photo-3.jpg" width="284" height="284" alt="Обложка фильма ">
+            </li>
+            <li class="films-catalog-item">
+                <img src="images/film-photo-4.jpg" width="284" height="284" alt="Обложка фильма ">
+            </li>
+            <li class="films-catalog-item">
+                <img src="images/film-photo-5.jpg" width="284" height="284" alt="Обложка фильма ">
+            </li>
+            <li class="films-catalog-item">
+                <img src="images/film-photo-6.jpg" width="284" height="284" alt="Обложка фильма ">
+            </li>
+            <li class="films-catalog-item">
+                <img src="images/film-photo-7.jpg" width="284" height="284" alt="Обложка фильма ">
+            </li>
+            <li class="films-catalog-item">
+                <img src="images/film-photo-8.jpg" width="284" height="284" alt="Обложка фильма ">
+            </li>
+            <li class="films-catalog-item">
+                <img src="images/film-photo-9.jpg" width="284" height="284" alt="Обложка фильма ">
+            </li>
+        </ul>
+    </section>
+    <section class="products container">
+        <h2 class="section-title products-title">Товары</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non
+            quam.
+        </p>
+        <ul class="products-list">
+            <li class="products-item">
+                <div class="products-item-content">
+                    <h3>Coca-cola</h3>
+                </div>
+                <img src="images/product-photo-1.jpg" width="253" height="339" alt="Coca-cola">
+            </li>
+            <li class="products-item">
+                <div class="products-item-content">
+                    <h3>Брелок “Железный человек”</h3>
+                </div>
+                <img src="images/product-photo-2.jpg" width="253" height="339" alt="Брелок “Железный человек”">
+            </li>
+            <li class="products-item">
+                <div class="products-item-content">
+                    <h3>Постер “Мстители”</h3>
+                </div>
+                <img src="images/product-photo-3.jpg" width="253" height="339" alt="Постер “Мстители”">
+            </li>
+        </ul>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title reviews-title">Отзывы</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
+                non
+                quam.
+            </p>
+            <ul class="reviews-list">
+                <li class="reviews-item">
+                    <div class="reviews-item-content">
+                        <h3>Елена Еленова</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                        <time datetime="2020-12-13">13.12.2020</time>
+                    </div>
+                    <img src="images/review-photo-1.jpg" width="211" height="153" alt="Фото клиента Елены Еленовой">
+                </li>
+                <li class="reviews-item">
+                    <div class="reviews-item-content">
+                        <h3>Борис Борисов</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                        <time datetime="2020-12-13">13.12.2020</time>
+                    </div>
+                    <img src="images/review-photo-2.jpg" width="247" height="179" alt="Фото клиента Бориса Борисова">
+                </li>
+                <li class="reviews-item">
+                    <div class="reviews-item-content">
+                        <h3>Леонардо ДиКаприо</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                        <time datetime="2020-12-13">13.12.2020</time>
+                    </div>
+                    <img src="images/review-photo-3.jpg" width="211" height="153" alt="Фото клиента Леонардо ДиКаприо">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="feedback container">
+        <div class="feedback-block">
+            <h2 class="section-title feedback-title">Обратная связь</h2>
+            <form action="#" method="post" class="feeback-form">
+                <label for="feedback_name" class="visually-hidden">Введите имя</label>
+                <input id="feedback_name" name="feedback_name" type="text" placeholder="Полное имя">
+                <label for="feedback_select" class="visually-hidden">Введите номер места</label>
+                <select name="feedback_select" id="feedback_select" class="feedback-select">
+                    <option value="" disabled selected>Номер места</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <label for="feedback_textarea" class="visually-hidden">Напишите свой отзыв</label>
+                <textarea name="feedback_textarea" id="feedback_textarea" rows="10" placeholder="Напишите свой отзыв">
+
+                </textarea>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="feedback_checkbox" name="feedback_checbox" class="feedback-checkbox">
+                    <label for="feedback_checkbox">Я согласен на обработку своих персональных данных</label>
+                </div>
+                <button type="submit">Послать</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="main-footer">.
+    <div class="footer-wrapper">
+        <div class="footer-row">
+            <img src="images/map.png" width="973" height="421" alt="Местоположение кина">
+        </div>
+        <div class="footer-row">
+            <div class="footer-column">
+                <img src="images/Logo-Innopolis-University.png" width="156" height="40"
+                     alt="Логотип университета Иннополис">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+                <ul class="social-list">
+                    <li class="social-item"><a href="#" class="social-link">Instagram</a></li>
+                    <li class="social-item"><a href="#" class="social-link">Linkedin</a></li>
+                    <li class="social-item"><a href="#" class="social-link">Twitter</a></li>
+                    <li class="social-item"><a href="#" class="social-link">Youtube</a></li>
+                    <li class="social-item"><a href="#" class="social-link">Facebook</a></li>
+                </ul>
+                <p class="copyright">Copyright  @ 2020 Innopolis University . All Rights Reserved.</p>
+            </div>
+            <div class="footer-column">
+                <dl class="footer-nav-list">
+                    <dt>Site</dt>
+                    <dd>
+                        <ul class="footer-site-list">
+                            <li class="footer-site-item"><a href="#" class="footer-site-link">Event details</a></li>
+                            <li class="footer-site-item"><a href="#" class="footer-site-link">Speakers</a></li>
+                            <li class="footer-site-item"><a href="#" class="footer-site-link">Sponsors</a></li>
+                            <li class="footer-site-item"><a href="#" class="footer-site-link">Past events</a></li>
+                            <li class="footer-site-item"><a href="#" class="footer-site-link">Contact</a></li>
+                        </ul>
+                    </dd>
+                    <dt>Contact</dt>
+                    <dd>
+                        <ul class="footer-contact-list">
+                            <li class="footer-contact-item"><a href="#" class="footer-contact-link">+7 (800) 355 12-56</a></li>
+                            <li class="footer-contact-item"><a href="#" class="footer-contact-link">kino@innopolis.ru</a></li>
+                            <li class="footer-contact-item"><a href="#" class="footer-contact-link">420500, г. Иннополис ул.Университетская, д.1</a></li>
+                            <li class="footer-contact-item"><a href="#" class="footer-contact-link">Как добраться</a></li>
+                            <li class="footer-contact-item"><a href="#" class="footer-contact-link">Все контакты</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
