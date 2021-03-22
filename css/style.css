@@ -1,3 +1,36 @@
+@font-face {
+    font-weight: 400;
+    src: local(IbmPlexSans),
+         url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+}
+
+@font-face {
+    font-weight: 600;
+    src: local(ImbPlexSans),
+         url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap");
+}
+
+@font-face {
+    font-weight: 500;
+    src: local(ImbPlexSans),
+         url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap");
+}
+
+
+@font-face {
+    font-weight: 300;
+    src: local(ImbPlexSans),
+         url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: "IBM Plex Sans", "Arial", sans-serif;
+    vertical-align: top;
+}
+
 .visually-hidden {
     width: 1px;
     height: 1px;
@@ -6,4 +39,35 @@
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute;
+}
+
+.films-table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.films-table th {
+    background-color: #A3CC40;
+
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+}
+
+.films-table td, .films-table th {
+    padding: 15px 10px 12px;
+}
+
+.films-table td:first-child, .films-table th:first-child {
+    padding-left: 80px;
+}
+
+.films-table tr:nth-child(odd) {
+    background-color: #373737;
+}
+
+.films-table tr:nth-child(even) {
+    background-color: #4C4D4F;
 }
