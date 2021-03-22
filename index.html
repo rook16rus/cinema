@@ -6,10 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Продажа билетов в кино в Иннополисе</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="main-header">
-    <nav class="main-nav container">
+    <nav class="main-nav container" aria-labelledby="main_menu_label">
+        <h2 class="visually-hidden" id="main_menu_label">Главное меню</h2>
         <a title="Кинотеатр Иннополис" target="_blank" href="#" class="logo">
             <img src="images/logo-innopolis-university.svg" width="156" height="40" alt="Логотип университета Иннополис">
         </a>
@@ -24,11 +26,11 @@
             </div>
             <div class="main-nav-row">
                 <ul class="navbar-list">
-                    <li class="navbar-item">Event details</li>
-                    <li class="navbar-item">Speakers</li>
-                    <li class="navbar-item">Sponsors</li>
-                    <li class="navbar-item">Past events</li>
-                    <li class="navbar-item">Contact</li>
+                    <li class="navbar-item"><a href="#">Event details</a></li>
+                    <li class="navbar-item"><a href="#">Speakers</a></li>
+                    <li class="navbar-item"><a href="#">Sponsors</a></li>
+                    <li class="navbar-item"><a href="#">Past events</a></li>
+                    <li class="navbar-item"><a href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -46,7 +48,7 @@
         <h2 class="section-title promo-title">Закажите билет в кино</h2>
         <p class="promo-description">Всем покупателям подарок!</p>
         <div class="welcome-block">
-            <h3>Добро пожаловать!</h3>
+            <h3 title="Добро пожаловать в кинотеатр Иннополис">Добро пожаловать!</h3>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam.
@@ -58,7 +60,7 @@
         </div>
     </section>
     <section class="features container">
-        <h2 class="section-title promo-title">Почему мы?</h2>
+        <h2 title="Наши преимущества" class="section-title promo-title">Почему мы?</h2>
         <ul class="features-list">
             <li class="features-item">
                 <img src="images/feature-photo-1.jpg" width="245" height="169" alt="Большие экраны">
@@ -111,7 +113,7 @@
         </ul>
     </section>
     <section class="films-timetable container">
-        <h2 class="section-title films-timetable-title">Выберите фильм</h2>
+        <h2 title="Широкий выбор фильма" class="section-title films-timetable-title">Выберите фильм</h2>
         <table class="films-table">
             <thead>
                 <tr>
@@ -179,42 +181,43 @@
         </p>
         <ul class="films-catalog-list">
             <li class="films-catalog-item">
-                <h3>Выживший</h3>
+                <span class="visually-hidden" id="film_description">Обложка фильма</span>
+                <h3 title="Фильм Выживший">Выживший</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar
                     etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.
                 </p>
-                <img src="images/film-photo-1.jpg" width="284" height="284" alt="Обложка фильма ">
+                <img src="images/film-photo-1.jpg" width="284" height="284" aria-labelledby="film_description">
             </li>
             <li class="films-catalog-item">
-                <img src="images/film-photo-2.jpg" width="284" height="284" alt="Обложка фильма ">
+                <img src="images/film-photo-2.jpg" width="284" height="284" aria-labelledby="film_description">
             </li>
             <li class="films-catalog-item">
-                <img src="images/film-photo-3.jpg" width="284" height="284" alt="Обложка фильма ">
+                <img src="images/film-photo-3.jpg" width="284" height="284" aria-labelledby="film_description">
             </li>
             <li class="films-catalog-item">
-                <img src="images/film-photo-4.jpg" width="284" height="284" alt="Обложка фильма ">
+                <img src="images/film-photo-4.jpg" width="284" height="284" aria-labelledby="film_description">
             </li>
             <li class="films-catalog-item">
-                <img src="images/film-photo-5.jpg" width="284" height="284" alt="Обложка фильма ">
+                <img src="images/film-photo-5.jpg" width="284" height="284" aria-labelledby="film_description">
             </li>
             <li class="films-catalog-item">
-                <img src="images/film-photo-6.jpg" width="284" height="284" alt="Обложка фильма ">
+                <img src="images/film-photo-6.jpg" width="284" height="284" aria-labelledby="film_description">
             </li>
             <li class="films-catalog-item">
-                <img src="images/film-photo-7.jpg" width="284" height="284" alt="Обложка фильма ">
+                <img src="images/film-photo-7.jpg" width="284" height="284" aria-labelledby="film_description">
             </li>
             <li class="films-catalog-item">
-                <img src="images/film-photo-8.jpg" width="284" height="284" alt="Обложка фильма ">
+                <img src="images/film-photo-8.jpg" width="284" height="284" aria-labelledby="film_description">
             </li>
             <li class="films-catalog-item">
-                <img src="images/film-photo-9.jpg" width="284" height="284" alt="Обложка фильма ">
+                <img src="images/film-photo-9.jpg" width="284" height="284" aria-labelledby="film_description">
             </li>
         </ul>
     </section>
     <section class="products container">
-        <h2 class="section-title products-title">Товары</h2>
+        <h2 title="Товары в кинотеатре Иннополис" class="section-title products-title">Товары</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non
@@ -243,7 +246,7 @@
     </section>
     <section class="reviews">
         <div class="container">
-            <h2 class="section-title reviews-title">Отзывы</h2>
+            <h2 title="Отзывы о кинотеатре Иннополис" class="section-title reviews-title">Отзывы</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
@@ -295,32 +298,39 @@
     </section>
     <section class="feedback container">
         <div class="feedback-block">
-            <h2 class="section-title feedback-title">Обратная связь</h2>
+            <h2 title="Связаться с кинотеатром Иннополис" class="section-title feedback-title">Обратная связь</h2>
             <form action="#" method="post" class="feedback-form">
-                <label for="feedback_name" class="visually-hidden">Введите имя</label>
-                <input id="feedback_name" name="feedback_name" type="text" placeholder="Полное имя">
-                <label for="feedback_select" class="visually-hidden">Введите номер места</label>
-                <select name="feedback_select" id="feedback_select" class="feedback-select">
+                <label for="feedback_name" class="visually-hidden" id="name_label">Введите имя</label>
+                <input id="feedback_name" name="feedback_name" type="text" placeholder="Полное имя" aria-labelledby="name_label" required>
+                <label for="feedback_select" class="visually-hidden" id="select_label">Введите номер места</label>
+                <select name="feedback_select" id="feedback_select" class="feedback-select" aria-labelledby="select_label" required>
                     <option value="" disabled selected>Номер места</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
+                    <option value="1">1 ряд 1 место</option>
+                    <option value="2">1 ряд 2 место</option>
+                    <option value="3">1 ряд 3 место</option>
+                    <option value="3">1 ряд 4 место</option>
+                    <option value="3">1 ряд 5 место</option>
+                    <option value="3">1 ряд 6 место</option>
+                    <option value="3">1 ряд 7 место</option>
+                    <option value="3">1 ряд 8 место</option>
+                    <option value="3">1 ряд 9 место</option>
+                    <option value="3">1 ряд 10 место</option>
                 </select>
-                <label for="feedback_textarea" class="visually-hidden">Напишите свой отзыв</label>
-                <textarea name="feedback_textarea" id="feedback_textarea" rows="10" placeholder="Напишите свой отзыв">
+                <label for="feedback_textarea" class="visually-hidden" id="textarea_label">Напишите свой отзыв</label>
+                <textarea name="feedback_textarea" id="feedback_textarea" rows="10" placeholder="Напишите свой отзыв" aria-labelledby="textarea_label" required>
 
                 </textarea>
                 <div class="checkbox-wrapper">
                     <input type="checkbox" id="feedback_checkbox" name="feedback_checbox" class="feedback-checkbox">
                     <label for="feedback_checkbox">Я согласен на обработку своих персональных данных</label>
                 </div>
-                <button type="submit">Послать</button>
+                <button type="submit">Заказать</button>
             </form>
         </div>
     </section>
 </main>
 
-<footer class="main-footer">.
+<footer class="main-footer">
     <div class="footer-wrapper">
         <div class="footer-row">
             <img src="images/map.png" width="973" height="421" alt="Местоположение кина">
