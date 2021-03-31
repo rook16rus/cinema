@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>49</title>
+    <style>
+        body {
+            background: #6592CF;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+        }
+
+        body div div {
+            background: #243D83;
+        }
+
+        body > div {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+        }
+
+        div div:first-child {
+            width: 200px;
+            height: 100px;
+
+            clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+        }
+
+        div div:last-of-type {
+            width: 150px;
+            height: 100px;
+            border-radius: 0 0 10px 10px;
+
+            position: relative;
+            margin: 0 auto;
+        }
+
+        div div:last-of-type::before {
+            content: "";
+
+            width: 100px;
+            height: 10px;
+            border-radius: 5px;
+            background: #EEB850;
+
+            position: absolute;
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        div div:last-of-type::after {
+            content: "";
+
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+
+            width: 50px;
+            height: 50px;
+            border-radius: 10px 10px 0 0;
+            background: #EEB850;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div></div>
+    <div></div>
+</div>
+</body>
+</html>

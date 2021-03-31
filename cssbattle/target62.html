@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>62</title>
+    <style>
+        body {
+            background: #191919;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+        }
+
+        div {
+            width: 150px;
+            height: 200px;
+            background: #F2AD43;
+            border-radius: 75px 75px 20px 20px;
+            overflow: hidden;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        div::before, div::after {
+            content: "";
+
+            height: 210px;
+            width: 210px;
+            border-radius: 50%;
+
+            position: absolute;
+            bottom: -108px;
+        }
+
+        div::before {
+            background: #E08027;
+            left: -110px;
+            z-index: 1;
+        }
+
+        div::after {
+            background: #824B20;
+            right: -110px;
+            z-index: 2;
+        }
+
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            background: #FFF58F;
+        }
+    </style>
+</head>
+<body>
+<div><p></p></div>
+</body>
+</html>

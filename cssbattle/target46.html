@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>46</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: #293462;
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            position: relative;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+
+            width: 200px;
+            height: 200px;
+            background: #FFF1C1;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        p {
+            position: absolute;
+
+            width: 150px;
+            height: 100px;
+            background: #FE5F55;
+
+            transform: rotate(-45deg);
+        }
+
+        p:first-child {
+            right: 1px;
+            top: 81px;
+        }
+
+        p:last-child {
+            bottom: -83px;
+            right: 113px
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p></p>
+    <p></p>
+</div>
+</body>
+</html>
