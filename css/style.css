@@ -45,14 +45,14 @@ body {
     position: absolute;
 }
 
-.films-table {
+.table {
     border-collapse: collapse;
     border-radius: 10px;
     overflow: hidden;
     color: #fff;
 }
 
-.films-table th {
+.table__row_color_green {
     background-color: #A3CC40;
 
     font-weight: 600;
@@ -60,18 +60,18 @@ body {
     text-align: left;
 }
 
-.films-table td, .films-table th {
+.table__col {
     padding: 15px 10px 12px;
 }
 
-.films-table td:first-child, .films-table th:first-child {
+.table__col_decorated {
     padding-left: 80px;
 }
 
-.films-table tr:nth-child(odd) {
+.table__col_color_dark-grey {
     background-color: #373737;
 }
 
-.films-table tr:nth-child(even) {
+.table__col_color_grey {
     background-color: #4C4D4F;
 }
