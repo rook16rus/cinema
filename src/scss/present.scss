@@ -1,0 +1,39 @@
+.present {
+  padding: 400px 0 400px;
+  background-image:url("../../images/present.png"), url("../../images/background-picture-2.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 500px 150px, center;
+  background-size: auto, contain;
+  text-align: right;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__title {
+    margin: 0 11px 38px 0 ;
+    color: #fff;
+  }
+
+  &__text {
+    margin: 0 0 20px;
+    max-width: 548px;
+
+    color: #fff;
+
+    &:last-of-type {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__button {
+    width: 190px;
+    padding: 7px 15px 8px;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,93 @@
+.films-timetable {
+  &__title {
+    margin: 0 0 85px 46px;
+  }
+
+  .films-timetable__table {
+    width: 850px;
+    box-sizing: border-box;
+    margin: 0 auto 30px;
+  }
+
+  &__text {
+    max-width: 540px;
+    margin: 0 auto;
+
+    font-size: 11px;
+    text-align: center;
+  }
+}
+
+.table {
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+  font-size: 14px;
+
+  &__row_color_green {
+    background-color: #A3CC40;
+
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  &__col {
+    padding: 15px 10px 12px;
+
+    &_decorated {
+      position: relative;
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        left: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 12px;
+        height: 12px;
+        background: url("../../images/icon-check.svg") no-repeat center;
+      }
+    }
+
+    &:first-child {
+      padding-left: 80px;
+    }
+  }
+
+  &__col_color_dark-grey {
+    background-color: #373737;
+  }
+
+  &__col_color_grey {
+    background-color: #4C4D4F;
+  }
+}
+
+.filter-button {
+  position: relative;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding: 0 20px 0 0;
+
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 12px;
+    height: 12px;
+    background: url("../../images/icon-select.svg") no-repeat center;
+  }
+}

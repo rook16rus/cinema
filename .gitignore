@@ -5,3 +5,6 @@ npm-debug.log
 .idea
 temp
 dist
+webpack.config.js
+package-lock.json
+package.json

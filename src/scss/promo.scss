@@ -1,0 +1,46 @@
+.promo {
+  padding-bottom: 310px;
+  position: relative;
+
+  &__title {
+    font-weight: 100;
+    font-size: 68px;
+    color: #fff;
+    text-align: center;
+
+    margin: 0 0 20px;
+  }
+
+  &__description {
+    font-size: 41px;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.welcome-block {
+  position: absolute;
+  right: 45px;
+  bottom: -50px;
+
+
+  width: 425px;
+  padding: 30px 47px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 27px 39px 0 rgba(163, 204, 64, 0.18);
+
+  font-size: 11px;
+}
+
+.welcome-block h3 {
+  font-weight: 600;
+  font-size: 33px;
+
+  margin: 0 0 22px;
+}
+
+.welcome-block p:not(:last-of-type) {
+  margin: 0 0 12px;
+}

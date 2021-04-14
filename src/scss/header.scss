@@ -1,0 +1,95 @@
+.main-header {
+  padding-bottom: 130px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 40px 0;
+
+  &__row-wrapper {
+    margin-bottom: -15px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+  }
+
+  &__contact-list {
+    display: flex;
+    align-items: flex-start;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__contact-item {
+    margin-right: 50px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  &__navbar-list {
+    display: flex;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__navbar-item {
+    margin-right: 65px;
+  }
+}
+
+.logo {
+  display: inline-block;
+
+  &__photo {
+    display: flex;
+  }
+}
+
+.button-phone {
+  padding-left: 27px;
+
+  &::before {
+    content: "";
+
+    width: 12px;
+    height: 12px;
+    background: url("../../images/icon-phone.svg") no-repeat center;
+
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:hover:before {
+    background-image: url(../../images/icon-phone-white.svg);
+  }
+}
+
+.language-select {
+  background-color: transparent;
+  border: 0;
+
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+
+  &__item {
+    background-color: #000;
+  }
+}
