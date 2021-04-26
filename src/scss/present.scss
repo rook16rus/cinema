@@ -1,8 +1,8 @@
 .present {
-  padding: 400px 0 400px;
+  padding: 18.18rem 0 18.18rem;
   background-image:url("../../images/present.png"), url("../../images/background-picture-2.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 500px 150px, center;
+  background-position: 150px 80px, center;
   background-size: auto, contain;
   text-align: right;
 
@@ -13,27 +13,27 @@
   }
 
   &__title {
-    margin: 0 11px 38px 0 ;
+    margin: 0 1rem 3.45rem 0 ;
     color: #fff;
   }
 
   &__text {
-    margin: 0 0 20px;
-    max-width: 548px;
+    margin: 0 0 1.81rem;
+    max-width: 49.81rem;
 
     color: #fff;
 
     &:last-of-type {
-      margin-bottom: 25px;
+      margin-bottom: 2.27rem;
     }
   }
 
   &__button {
-    width: 190px;
-    padding: 7px 15px 8px;
+    width: 17.27rem;
+    padding: 0.63rem 1.36rem 0.72rem;
     box-sizing: border-box;
 
-    font-size: 14px;
+    font-size: 1.27rem;
     text-align: center;
   }
 }

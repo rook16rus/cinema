@@ -1,19 +1,28 @@
 .films-timetable {
   &__title {
-    margin: 0 0 85px 46px;
+    margin: 0 0 7.72rem 4.18rem;
   }
 
   .films-timetable__table {
-    width: 850px;
+    width: 88%;
     box-sizing: border-box;
-    margin: 0 auto 30px;
+    margin: 0 auto 2.72rem;
+
+    @media (max-width: 895px) {
+      font-size: 1rem;
+    }
+
+    @media (max-width: 550px) {
+      min-height: 80vh;
+      font-size: 18px;
+    }
   }
 
   &__text {
-    max-width: 540px;
+    max-width: 49.09rem;
     margin: 0 auto;
 
-    font-size: 11px;
+    font-size: 1rem;
     text-align: center;
   }
 }
@@ -23,41 +32,55 @@
   border-radius: 10px;
   overflow: hidden;
   color: #fff;
-  font-size: 14px;
+  font-size: 1.27rem;
+
+  .colgroup__col_first {
+    width: 35%;
+    box-sizing: border-box;
+  }
+
+  .colgroup__col_second {
+    width: 30%;
+    box-sizing: border-box;
+  }
+
+  .colgroup__col_third {
+    width: 35%;
+    box-sizing: border-box;
+  }
 
   &__row_color_green {
     background-color: #A3CC40;
 
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.42em;
     text-align: left;
+
+    .table__col:first-child {
+      padding-left: 9%;
+    }
   }
 
   &__col {
-    padding: 15px 10px 12px;
+    padding: 1.07em 0.71em 0.85em;
 
-    &_decorated {
-      position: relative;
+    &_decorated-content {
+      display: flex;
+      align-items: center;
 
       &::before {
         content: "";
 
-        position: absolute;
-        left: 24px;
-        top: 50%;
-        transform: translateY(-50%);
-
+        display: block;
         width: 12px;
         height: 12px;
+        margin-right: 3.14em;
         background: url("../../images/icon-check.svg") no-repeat center;
       }
     }
 
     &:first-child {
-      padding-left: 80px;
-    }
-    &:last-child {
-      width: 38%;
+      padding-left: 3%;
     }
   }
 
@@ -75,11 +98,12 @@
   background-color: transparent;
   border: 0;
   outline: 0;
-  padding: 0 20px 0 0;
+  padding: 0 1.81rem 0 0;
 
   color: inherit;
   font-weight: inherit;
   font-size: inherit;
+  text-align: left;
 
   &::after {
     content: "";

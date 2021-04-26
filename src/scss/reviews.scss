@@ -1,21 +1,21 @@
 .reviews {
-  padding: 400px 0 400px;
+  padding: 18.18rem 0 18.18rem;
   background: url("../../images/background-picture-3.jpg") no-repeat center;
   background-size: contain;
 
   &__title {
-    margin: 0 0 25px 50px;
+    margin: 0 0 2.27rem 4.54rem;
   }
 
   &__text {
-    max-width: 548px;
-    margin: 0 0 75px 52px;
+    max-width: 49.81rem;
+    margin: 0 0 6.81rem 4.72rem;
     color: #fff;
   }
 
   &__list {
     list-style: none;
-    margin: 0 -90px 0 53px;
+    margin: 0 -8.18rem 0 4.81rem;
     padding: 0;
 
     display: flex;
@@ -23,8 +23,8 @@
   }
 
   &__item {
-    width: 211px;
-    margin-right: 90px;
+    width: 19.18rem;
+    margin-right: 8.18rem;
     border-radius: 9px;
     background-color: #97B13C;
     color: #fff;
@@ -40,7 +40,7 @@
     }
 
     &-content {
-      padding: 17px 15px 7px 8px;
+      padding: 1.54rem 1.36rem 0.63rem 0.72rem;
     }
 
     &-blockquote {
@@ -51,48 +51,48 @@
       display: block;
 
       font-weight: 600;
-      font-size: 15px;
+      font-size: 1.36rem;
       font-style: normal;
-      margin: 0 0 13px;
+      margin: 0 0 1.18rem;
     }
 
     &-text {
-      font-size: 10px;
-      margin: 0 0 9px;
+      font-size: 0.9rem;
+      margin: 0 0 0.81rem;
     }
 
     &-date {
       display: block;
 
       font-weight: 300;
-      font-size: 8px;
+      font-size: 0.72rem;
       text-align: right;
     }
 
   }
 
   &__item-current {
-    width: 247px;
+    width: 22.45rem;
     opacity: 1;
 
     .reviews__item-content {
-      padding: 17px 8px 9px 17px;
+      padding: 1.54rem 0.72rem 0.81rem 1.54rem;
     }
 
     .reviews__item-author-name {
-      margin: 0 0 18px;
+      margin: 0 0 1.63rem;
 
-      font-size: 18px;
+      font-size: 1.63rem;
     }
 
     .reviews__item-text {
-      margin: 0 0 30px;
+      margin: 0 0 2.72rem;
 
-      font-size: 11px;
+      font-size: 1rem;
     }
 
     .reviews__item-date {
-      font-size: 9px;
+      font-size: 0.81rem;
     }
   }
 }

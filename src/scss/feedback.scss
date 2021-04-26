@@ -1,12 +1,12 @@
 .feedback {
-  padding: 60px 0;
+  padding: 5.45rem 0;
 
   &__inner {
-    width: 767px;
-    padding: 31px 42px 33px;
-    margin-left: 85px;
+    width: 69.72rem;
+    padding: 2.81rem 3.81rem 3rem;
+    margin-left: 7.72rem;
     border-radius: 20px;
-    box-shadow: 8px 9px 39px 0 rgba(185, 185, 185, 0.37);
+    box-shadow: 8px 0.81rem 39px 0 rgba(185, 185, 185, 0.37);
     box-sizing: border-box;
 
     display: flex;
@@ -21,34 +21,34 @@
   }
 
   &__title {
-    font-size: 25px;
-    margin: 0 0 20px;
+    font-size: 2.27rem;
+    margin: 0 0 1.81rem;
   }
 }
 
 .feedback-form {
-  width: 344px;
+  width: 31.27rem;
 
   &__name {
-    margin: 0 0 33px;
+    margin: 0 0 3rem;
   }
 
   &__place {
-    margin: 0 0 30px;
+    margin: 0 0 2.72rem;
   }
 
   &__review-field {
-    margin: 0 0 27px;
+    margin: 0 0 2.45rem;
   }
 
   &__policy {
-    margin: 0 0 46px;
+    margin: 0 0 4.18rem;
   }
 
   &__button {
     width: 100%;
-    padding: 17px 15px 15px;
-    font-size: 20px;
+    padding: 1.54rem 1.36rem 1.36rem;
+    font-size: 1.81rem;
     box-sizing: border-box;
     border: 0;
   }
@@ -56,13 +56,13 @@
 
 .form-field {
   width: 100%;
-  padding: 12px 15px 11px;
+  padding: 1.09rem 1.36rem 1rem;
   box-sizing: border-box;
   border-radius: 5px;
   border: 0;
   background-color: #DEDEDE;
 
-  font-size: 15px;
+  font-size: 1.36rem;
   color: #A1A1A1;
 }
 
@@ -88,14 +88,14 @@
     align-items: center;
     cursor: pointer;
 
-    font-size: 10px;
+    font-size: 0.9rem;
 
     &::before {
       content: "";
 
       width: 18px;
       height: 17px;
-      margin-right: 6px;
+      margin-right: 0.54rem;
       border: 1px solid #A3CC40;
       border-radius: 5px;
     }
