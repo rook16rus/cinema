@@ -55,6 +55,7 @@ body {
 .container {
   max-width: 946px;
   min-width: 550px;
+  box-sizing: border-box;
   padding: 0 15px;
   margin: 0 auto;
 

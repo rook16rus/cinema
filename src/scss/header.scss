@@ -9,7 +9,7 @@
 @media (max-width: 550px) {
   .main-header {
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 

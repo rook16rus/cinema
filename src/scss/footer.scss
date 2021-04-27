@@ -1,20 +1,34 @@
 .main-footer {
   &__row_map {
+    width: 86.5%;
+    height: 421px;
+
     position: relative;
     z-index: -1;
 
-    margin: 0 0 -2rem;
+    margin: 0 auto -2rem;
     text-align: center;
+
+  }
+
+  &__map-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
   }
 
   &__row_content {
-    padding: 8.18rem 8.09rem 3.19rem;
+    width: 100%;
+    padding: 8.18rem 7.9% 3.19rem;
+    box-sizing: border-box;
     background-color: #A3CC40;
     color: #fff;
 
     display: grid;
     grid-template-columns: auto 1fr;
-    column-gap: 14.09rem;
+    column-gap: 13.8%;
     grid-template-areas:
             'contact navbar'
             'copyright copyright';
@@ -32,7 +46,7 @@
     display: inline-grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    gap: 2.27rem 9.09rem;
+    gap: 15.43% 28.9%;
 
     margin: 0;
 
