@@ -1,10 +1,14 @@
+.table-scroll {
+  overflow-x: scroll;
+}
+
 .films-timetable {
   &__title {
     margin: 0 0 7.72rem 5.3%;
   }
 
   .films-timetable__table {
-    width: 88%;
+    width: 850px;
     box-sizing: border-box;
     margin: 0 auto 2.72rem;
 

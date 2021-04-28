@@ -4,7 +4,6 @@
   background-size: contain;
 
   @media (max-width: 940px) {
-    padding: 13% 0 18.18rem;
     min-height: 50vh;
     background-size: cover;
   }
@@ -36,6 +35,7 @@
 
     @media (max-width: 940px) {
       margin: 0;
+      flex-direction: column;
     }
   }
 
@@ -51,14 +51,8 @@
     flex-direction: column;
 
     @media (max-width: 940px) {
-      & {
-        display: none;
-      }
-
-      &-current {
-        display: flex;
-        margin: 0;
-      }
+      margin-bottom: 20px;
+      margin-right: 0;
     }
 
     &-author-photo {

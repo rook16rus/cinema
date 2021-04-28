@@ -86,9 +86,11 @@ body {
   padding: 0;
 
   display: flex;
+  flex-wrap: wrap;
 
   &__item:not(:last-child) {
     margin-right: 31px;
+    margin-bottom: 10px;
   }
 
   &__link {
