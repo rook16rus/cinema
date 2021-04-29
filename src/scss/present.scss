@@ -9,6 +9,9 @@
   @media (max-width: 980px) {
     min-height: 50vh;
     background-size: 24.5%, cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &__inner {
