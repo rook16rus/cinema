@@ -6,19 +6,21 @@
 
 }
 
-@media (max-width: 550px) {
+@media (max-width: 720px) {
   .main-header {
     background-size: cover;
-    min-height: 100vh;
+    min-height: 75vh;
   }
 }
 
 .main-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-
   padding: 3.63rem 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
   &__row-wrapper {
     margin-bottom: -1.36rem;
