@@ -1,6 +1,6 @@
 .reviews {
-  padding: 17.8% 0 18.18rem;
-  background: url("../../images/background-picture-3.jpg") no-repeat center;
+  padding: 6.8% 0 17.18rem;
+  background: url("../../images/background-picture-3.jpg") no-repeat center top;
   background-size: contain;
 
   @media (max-width: 940px) {
@@ -9,7 +9,11 @@
   }
 
   &__title {
-    margin: 0 0 2.27rem 5.3%;
+    margin: 4.54rem 0 2.27rem 5.3%;
+    
+    @media (max-width: 700px) {
+      margin-top: 7.54rem;
+    }
   }
 
   &__text {
@@ -26,7 +30,7 @@
 
   &__list {
     list-style: none;
-    margin: 0 0 0 4.81rem;
+    margin: 0 0 0 8.81rem;
     padding: 0;
 
     display: flex;
@@ -62,7 +66,7 @@
     }
 
     &-content {
-      padding: 1.54rem 1.36rem 0.63rem 0.72rem;
+      padding: 1.54rem 1.26rem 0.63rem 0.72rem;
     }
 
     &-blockquote {
@@ -137,12 +141,12 @@
 
     &_left {
       left: -54px;
-      top: -270px;
+      top: -278px;
     }
 
     &_right {
       right: -54px;
-      top: -270px;
+      top: -278px;
       transform: rotate(180deg);
     }
   }

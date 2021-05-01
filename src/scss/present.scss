@@ -1,17 +1,17 @@
 .present {
-  padding: 18.18rem 0 18.18rem;
+  padding: 18.18rem 0 13.68rem;
   background-image:url("../../images/present.png"), url("../../images/background-picture-2.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 11.9% 13%, center;
+  background-position: 16.5% 13.7%, center bottom -20%;
   background-size: 24.5%, contain;
   text-align: right;
   
-  @media (max-width: 980px) {
-    min-height: 50vh;
+  @media (max-width: 1020px) {
+    min-height: 80vh;
     background-size: 24.5%, cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   &__inner {
@@ -26,12 +26,12 @@
   }
 
   &__title {
-    margin: 0 1rem 3.45rem 0 ;
+    margin: 26px 4.2rem 3.45rem 0 ;
     color: #fff;
   }
 
   &__text {
-    margin: 0 0 1.81rem;
+    margin: 0 45px 1.41rem 0;
     max-width: 49.81rem;
 
     color: #fff;
@@ -44,6 +44,7 @@
   &__button {
     width: 17.27rem;
     padding: 0.63rem 1.36rem 0.72rem;
+    margin-right: 48px;
     box-sizing: border-box;
 
     font-size: 1.27rem;

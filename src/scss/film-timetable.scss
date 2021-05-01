@@ -4,13 +4,13 @@
 
 .films-timetable {
   &__title {
-    margin: 0 0 7.72rem 5.3%;
+    margin: 0 0 7.52rem 5.3%;
   }
 
   .films-timetable__table {
     width: 850px;
     box-sizing: border-box;
-    margin: 0 auto 2.72rem;
+    margin: 0 auto 1.32rem;
 
     @media (max-width: 895px) {
       font-size: 1rem;
@@ -65,8 +65,12 @@
     }
   }
 
+  &__tbody {
+    line-height: 2.25;
+  }
+
   &__col {
-    padding: 1.07em 0.71em 0.85em;
+    padding: 0.4em 0.71em 0.65em;
 
     &_decorated-content {
       display: flex;

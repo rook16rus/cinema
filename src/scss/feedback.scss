@@ -1,9 +1,9 @@
 .feedback {
-  padding: 5.45rem 0;
+  padding-bottom: 5.45rem;
 
   &__inner {
-    width: 81%;
-    padding: 2.81rem 3.81rem 3rem;
+    width: 82%;
+    padding: 2.81rem 4.5rem 3rem;
     margin: 0 auto;
     border-radius: 20px;
     box-shadow: 8px 0.81rem 39px 0 rgba(185, 185, 185, 0.37);
@@ -23,6 +23,7 @@
   &__title {
     font-size: 2.27rem;
     margin: 0 0 1.81rem;
+    text-align: center;
   }
 }
 
@@ -38,7 +39,8 @@
   }
 
   &__review-field {
-    margin: 0 0 2.45rem;
+    margin: 0 0 2.25rem;
+    min-height: 120px;
   }
 
   &__policy {
