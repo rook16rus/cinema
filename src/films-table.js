@@ -3,19 +3,21 @@ const films =
         {
             time: '10:00',
             name: 'Человек паук',
-            genre: 'Фантастика, боевик, приключения'
+            genre: 'Фантастика, боевик, приключения',
+            adult: true
         },
 
         {
             time: '12:00',
             name: 'Собачья жизнь 2',
-            genre: 'Фэнтэзи, драма, комедия'
+            genre: 'Фэнтэзи, драма, комедия',
+            adult: true
         },
 
         {
             time: '14:00',
             name: 'История игрушек 4',
-            genre: 'Мультфильм, фэнтэзи, комедия'
+            genre: 'Мультфильм, фэнтэзи, комедия',
         },
 
         {
@@ -25,17 +27,20 @@ const films =
         }
     ];
 
-const tableRow = document.querySelectorAll('.table__tbody .table__row');
+const filmsRow = document.querySelectorAll('.table__tbody .table__row');
 
+filmHelper(filmsRow);
 
-for (let i = 0; i < films.length; i++) {
-    tableRow[i].children[0].children[0].innerText = films[i].time;
-    tableRow[i].children[1].innerHTML = films[i].name;
-    tableRow[i].children[2].innerHTML = films[i].genre;
+function filmHelper(tableRow) {
+    for (let i = 0; i < films.length; i++) {
+        if (films[i].adult === true)
+        {
+            tableRow[i].children[0].children[0].innerText = films[i].time;
+            tableRow[i].children[1].innerHTML = films[i].name;
+            tableRow[i].children[2].innerHTML = films[i].genre;
+        } else
+        {
+            tableRow[i].remove();
+        }
+    }
 }
-
-/*
-const genre = ['фантастика', 'боевик', 'приключения', 'фэнтэзи', 'драма', 'комедия', 'мультфильм'];
-const films = ['человек-паук', 'собачья жизнь 2', 'история игрушек 4', 'люди в черном: интернешнл'];
-*/
-
