@@ -32,15 +32,18 @@ const filmsRow = document.querySelectorAll('.table__tbody .table__row');
 filmHelper(filmsRow);
 
 function filmHelper(tableRow) {
-    for (let i = 0; i < films.length; i++) {
-        if (films[i].adult === true)
+    let counter = 0;
+    for (film of films) {
+        if (film.adult === true)
         {
-            tableRow[i].children[0].children[0].innerText = films[i].time;
-            tableRow[i].children[1].innerHTML = films[i].name;
-            tableRow[i].children[2].innerHTML = films[i].genre;
+            tableRow[counter].children[0].children[0].innerText = film.time;
+            tableRow[counter].children[1].innerHTML = film.name;
+            tableRow[counter].children[2].innerHTML = film.genre;
+            counter++;
         } else
         {
-            tableRow[i].remove();
+            tableRow[counter].remove();
+            counter++;
         }
     }
 }
