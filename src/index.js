@@ -1,9 +1,9 @@
 import "normalize.css"
-import "../owl_carousel/dist/assets/owl.theme.default.css"
-import "../owl_carousel/dist/assets/owl.carousel.css"
-import "../owl_carousel/dist/owl.carousel"
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel';
 import "./scss/style.scss"
 import "./films-table"
+
 
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel();
