@@ -11,6 +11,7 @@ $(document).ready(function(){
 
 $('.owl-carousel').owlCarousel({
     items: 3,
+    center: true,
     loop: true,
     responsive: {
         820: {
@@ -25,4 +26,6 @@ $('.owl-carousel').owlCarousel({
         },
     },
     nav: true,
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut'
 });

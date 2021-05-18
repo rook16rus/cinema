@@ -58,9 +58,6 @@
       margin-right: 0;
     }
 
-    &:hover {
-      transform: scale(1.1);
-    }
 
     &-author-photo {
       display: flex;
@@ -167,4 +164,17 @@
     top: -269px;
     transform: rotate(180deg);
   }
+}
+
+.owl-stage-outer {
+  padding: 20px 10px;
+}
+
+.owl-item {
+  transition: 0.3s;
+}
+
+.owl-item.center.active {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
