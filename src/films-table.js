@@ -1,6 +1,6 @@
 const films =
     [
-        {
+         {
             time: '10:00',
             name: 'Человек паук',
             genre: 'Фантастика, боевик, приключения',
@@ -27,23 +27,44 @@ const films =
         }
     ];
 
-const filmsRow = document.querySelectorAll('.table__tbody .table__row');
+const tBody = document.querySelector('.table__tbody');
 
-filmHelper(filmsRow);
+filmHelper();
 
-function filmHelper(tableRow) {
+function filmHelper() {
     let counter = 0;
     for (film of films) {
-        if (film.adult === true)
+        if (film.adult)
         {
-            tableRow[counter].children[0].children[0].innerText = film.time;
-            tableRow[counter].children[1].innerHTML = film.name;
-            tableRow[counter].children[2].innerHTML = film.genre;
-            counter++;
-        } else
-        {
-            tableRow[counter].remove();
-            counter++;
+            if ((counter % 2) == 0)
+            {
+                tBody.insertAdjacentHTML("beforeend",
+                    '<tr class="table__row">' +
+                    '<td class="table__col table__col_decorated table__col_color_dark-grey">' +
+                    `<div class="table__col_decorated-content">${film.time}</div>` +
+                    '</td>' +
+                    `<td class="table__col table__col_color_dark-grey">${film.name}</td>` +
+                    `<td class="table__col table__col_color_dark-grey">${film.genre}</td>` +
+                    '</tr>');
+                counter++;
+            } else {
+                tBody.insertAdjacentHTML("beforeend",
+                    '<tr class="table__row">' +
+                    '<td class="table__col table__col_decorated table__col_color_grey">' +
+                    `<div class="table__col_decorated-content">${film.time}</div>` +
+                    '</td>' +
+                    `<td class="table__col table__col_color_grey">${film.name}</td>` +
+                    `<td class="table__col table__col_color_grey">${film.genre}</td>` +
+                    '</tr>');
+                counter++;
+            }
         }
+
+
+
     }
+}
+
+class Film {
+
 }
