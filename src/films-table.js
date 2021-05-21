@@ -29,42 +29,51 @@ const films =
 
 const tBody = document.querySelector('.table__tbody');
 
-filmHelper();
-
-function filmHelper() {
-    let counter = 0;
-    for (film of films) {
-        if (film.adult)
+const filmHelper =
+    {
+        getTime()
         {
-            if ((counter % 2) == 0)
-            {
-                tBody.insertAdjacentHTML("beforeend",
-                    '<tr class="table__row">' +
-                    '<td class="table__col table__col_decorated table__col_color_dark-grey">' +
-                    `<div class="table__col_decorated-content">${film.time}</div>` +
-                    '</td>' +
-                    `<td class="table__col table__col_color_dark-grey">${film.name}</td>` +
-                    `<td class="table__col table__col_color_dark-grey">${film.genre}</td>` +
-                    '</tr>');
-                counter++;
-            } else {
-                tBody.insertAdjacentHTML("beforeend",
-                    '<tr class="table__row">' +
-                    '<td class="table__col table__col_decorated table__col_color_grey">' +
-                    `<div class="table__col_decorated-content">${film.time}</div>` +
-                    '</td>' +
-                    `<td class="table__col table__col_color_grey">${film.name}</td>` +
-                    `<td class="table__col table__col_color_grey">${film.genre}</td>` +
-                    '</tr>');
-                counter++;
-            }
+            return this.time;
+        },
+        getName()
+        {
+            return this.name;
+        },
+        getGenre()
+        {
+            return this.genre;
         }
+    };
 
-
-
+const renderFilmTableItem = function(film, counter)
+{
+    if ((counter % 2) == 0)
+    {
+    return '<tr class="table__row">' +
+        '<td class="table__col table__col_decorated table__col_color_dark-grey">' +
+        `<div class="table__col_decorated-content">${filmHelper.getTime.apply(film)}</div>` +
+        '</td>' +
+        `<td class="table__col table__col_color_dark-grey">${filmHelper.getName.apply(film)}</td>` +
+        `<td class="table__col table__col_color_dark-grey">${filmHelper.getGenre.apply(film)}</td>` +
+        '</tr>';
+    } else
+    {
+        return '<tr class="table__row">' +
+            '<td class="table__col table__col_decorated table__col_color_grey">' +
+            `<div class="table__col_decorated-content">${filmHelper.getTime.apply(film)}</div>` +
+            '</td>' +
+            `<td class="table__col table__col_color_grey">${filmHelper.getName.apply(film)}</td>` +
+            `<td class="table__col table__col_color_grey">${filmHelper.getGenre.apply(film)}</td>` +
+            '</tr>';
     }
-}
+};
 
-class Film {
-
+let counter = 0;
+for (film of films)
+{
+    if (film.adult)
+    {
+        tBody.innerHTML += renderFilmTableItem(film, counter);
+        counter++
+    }
 }

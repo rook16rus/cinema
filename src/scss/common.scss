@@ -216,3 +216,31 @@ body {
 .p-street-address {
   font-style: normal;
 }
+
+.popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(51, 51, 51, 0.24);
+}
+
+.form-wrapper {
+  position: relative;
+  background-color: #fff;
+  max-width: 600px;
+  min-height: 300px ;
+  margin: 120px auto;
+  border-radius: 40px;
+}
+
+.close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
