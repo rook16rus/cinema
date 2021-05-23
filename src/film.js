@@ -1,8 +1,10 @@
-class Film {
+import {toMinutes, toHour, getRandomToMax} from "./utils";
+
+export class Film {
     constructor(filmData)
     {
         this.data = filmData;
-        this.time = `${toHour(getRandomToMax(24))}:${toMinutes(getRandomToMax(60))}`
+        this.time = `${toHour(getRandomToMax(24))}:${toMinutes(getRandomToMax(6))}`
     }
 
     getTime()

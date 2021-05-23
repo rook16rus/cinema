@@ -1,3 +1,5 @@
+import {Film} from "./film";
+
 const films =
     [
          {
@@ -32,12 +34,13 @@ const films =
 const tBody = document.querySelector('.table__tbody');
 
 let counter = 0;
-for (film of films)
+let iteration;
+for (iteration of films)
 {
-    const film = new Film(film);
+    const film = new Film(iteration);
     if (film.isNotForAdult())
     {
-        tBody.innerHTML += filmm.renderFilmTableItem(counter);
+        tBody.innerHTML += film.renderFilmTableItem(counter);
         counter++
     }
 }

@@ -2,8 +2,6 @@ import "normalize.css"
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
 import "./scss/style.scss"
-import "./utils"
-import "./film"
 import "./films-table"
 import "./present"
 
