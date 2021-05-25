@@ -577,12 +577,32 @@
 </footer>
 <div class="popup visually-hidden" id="present-popup">
     <div class="form-wrapper">
-        <button id="present-button-close" class="close">
-            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="17.5" cy="17.5" r="17.5" fill="#A3CC40"/>
-                <path d="M25.5363 11.8271L23.9176 10.2084L17.5 16.626L11.0824 10.2084L9.46362 11.8271L15.8812 18.2447L9.46362 24.6623L11.0824 26.2811L17.5 19.8635L23.9176 26.2811L25.5363 24.6623L19.1187 18.2447L25.5363 11.8271Z" fill="white"/>
-            </svg>
-        </button>
+        <button id="present-button-close" class="close"></button>
+        <form class="present-form" action="#" method="post">
+            <div class="present-form__wrapper">
+                <label for="present_form_name" class="present-form__label">Введите имя</label>
+                <input type="text" id="present_form_name" name="present_form_name" class="present-form__field">
+                <span class="error-text">Error message</span>
+            </div>
+            <div class="present-form__wrapper">
+                <label for="present_form_email" class="present-form__label">Введите email</label>
+                <input type="text" id="present_form_email" name="present_form_email" class="present-form__field">
+                <span class="error-text">Error message</span>
+            </div>
+            <div class="present-form__wrapper">
+                <label for="present_form_present" class="present-form__label">Выберите подарок</label>
+                <select type="text" id="present_form_present" name="present_form_present" class="present-form__field present-select">
+                    <option value="none"></option>
+                    <option value="doublePopcorn">Удвоим попкорн</option>
+                    <option value="freeTicket">Бесплатный 3-ий билет</option>
+                </select>
+            </div>
+            <div class="present-form__wrapper checkbox-field">
+                <input class="checkbox-field__checkbox visually-hidden" type="checkbox" id="present_checkbox" name="feedback_checkbox" required>
+                <label class="checkbox-field__label" for="present_checkbox">Я согласен на обработку своих персональных данных</label>
+            </div>
+            <button class="present-form__button button_color_green" type="submit">Отправить</button>
+        </form>
     </div>
 </div>
 <script src="/node_modules/jquery/dist/jquery.js"></script>

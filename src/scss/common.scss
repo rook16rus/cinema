@@ -203,44 +203,18 @@ body {
   &_color_green {
     background-color: #A3CC40;
     color: #fff;
+    transition: 0.3s;
 
     &:hover {
       box-shadow: 0 0 0 1px rgba(163, 204, 64, 0.62), 0 2px 9px 0 rgba(144, 210, 61, 0.3);
 
       background-color: #fff;
       color: #A3CC40;
+      transition: 0.3s;
     }
   }
 }
 
 .p-street-address {
   font-style: normal;
-}
-
-.popup {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background-color: rgba(51, 51, 51, 0.24);
-}
-
-.form-wrapper {
-  position: relative;
-  background-color: #fff;
-  max-width: 600px;
-  min-height: 300px ;
-  margin: 120px auto;
-  border-radius: 40px;
-}
-
-.close {
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  background-color: transparent;
-  outline: none;
-  border: 0;
-  cursor: pointer;
 }
