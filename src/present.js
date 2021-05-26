@@ -24,23 +24,28 @@ function initializedField(field)
     field.classList.remove(ACTIVE_CLASS_NAME);
     fieldError.innerText = '';
 
-    input.onfocus = function ()
+    input.addEventListener('focus', function ()
     {
         field.classList.add(ACTIVE_CLASS_NAME);
-    };
+    });
 
-    input.onblur = () =>
+
+    input.addEventListener('blur', () =>
     {
         if (!input.value)
         {
             field.classList.remove(ACTIVE_CLASS_NAME)
         }
-    };
+    });
 
     return {
         getValue()
         {
             return input.value;
+        },
+        focus()
+        {
+            input.focus();
         }
     }
 }
@@ -48,7 +53,11 @@ function initializedField(field)
 const nameFieldUtils = initializedField(nameField);
 const emailFieldUtils  = initializedField(emailField);
 
-btnOpen.onclick = popupToggle;
+btnOpen.addEventListener('click', () =>
+{
+    popupToggle();
+    nameFieldUtils.focus()
+});
 btnClose.onclick = popupToggle;
 
 function handleSubmit(event)
