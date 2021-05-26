@@ -1,8 +1,9 @@
 const btnOpen = document.querySelector('#present-button-open');
-const btnClose = document.querySelector('#present-button-close')
+const btnClose = document.querySelector('#present-button-close');
 const popup = document.querySelector('#present-popup');
 const nameField = document.querySelector('.present-form__wrapper:nth-of-type(1)');
 const emailField = document.querySelector('.present-form__wrapper:nth-of-type(2)');
+const selectPrize = document.getElementById('present_form_present');
 const form = document.querySelector('.present-form');
 
 function popupToggle()
@@ -11,7 +12,8 @@ function popupToggle()
 }
 
 const ERROR_CLASS_NAME = 'error';
-const ACTIVE_CLASS_NAME = 'active'
+const ACTIVE_CLASS_NAME = 'active';
+const SELECT_SELECTED = 'selected';
 
 function initializedField(field)
 {
@@ -57,6 +59,10 @@ btnOpen.addEventListener('click', () =>
 {
     popupToggle();
     nameFieldUtils.focus()
+});
+selectPrize.addEventListener('change', () =>
+{
+   selectPrize.classList.add(SELECT_SELECTED);
 });
 btnClose.onclick = popupToggle;
 

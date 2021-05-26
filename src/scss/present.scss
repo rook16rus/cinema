@@ -119,6 +119,9 @@
 
     display: inline-block;
     padding: 0 5px;
+
+    font-size: 15px;
+    color: #A1A1A1;
   }
 
   &__field {
@@ -151,6 +154,11 @@
   -moz-appearance: none;
 
   background: #DEDEDE url("../../images/select-arrow.svg") no-repeat center right 12px;
+
+  &.selected {
+    background-color: #fff;
+    border-color: #A3CC40;
+  }
 }
 
 .error .present-form__field {
