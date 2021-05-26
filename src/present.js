@@ -18,7 +18,6 @@ const SELECT_SELECTED = 'selected';
 function initializedField(field)
 {
     const input = field.getElementsByTagName('input')[0];
-    console.log(input);
     const fieldError = field.querySelector('.present-form .error-text');
 
     reset();
