@@ -165,13 +165,20 @@
   border-color: red;
 }
 
+select.error {
+  border-color: red;
+}
+
+.error .error-text {
+  display: block;
+}
 
 .error-text {
   position: absolute;
   bottom: 2px;
   left: 10px;
 
-  display: block;
+  display: none;
 
   font-size: 10px;
   color: red;

@@ -21,16 +21,18 @@ function initializedField(field)
     console.log(input);
     const fieldError = field.querySelector('.present-form .error-text');
 
-    input.value = '';
-    field.classList.remove(ERROR_CLASS_NAME);
-    field.classList.remove(ACTIVE_CLASS_NAME);
-    fieldError.innerText = '';
+    reset();
+
+    function clearError ()
+    {
+        field.classList.remove(ERROR_CLASS_NAME);
+        fieldError.innerText = '';
+    }
 
     input.addEventListener('focus', function ()
     {
         field.classList.add(ACTIVE_CLASS_NAME);
     });
-
 
     input.addEventListener('blur', () =>
     {
@@ -40,7 +42,24 @@ function initializedField(field)
         }
     });
 
+    input.addEventListener('input', () =>
+    {
+        clearError();
+    });
+    
+    function reset()
+    {
+        input.value = '';
+        field.classList.remove(ACTIVE_CLASS_NAME);
+        clearError();
+    }
+
     return {
+        addError(errorText)
+        {
+            field.classList.add(ERROR_CLASS_NAME);
+            fieldError.innerText = errorText
+        },
         getValue()
         {
             return input.value;
@@ -48,7 +67,8 @@ function initializedField(field)
         focus()
         {
             input.focus();
-        }
+        },
+        reset: reset,
     }
 }
 
@@ -69,16 +89,45 @@ btnClose.onclick = popupToggle;
 function handleSubmit(event)
 {
     event.preventDefault();
+    const nameValue =  nameFieldUtils.getValue();
+    const emailValue = emailFieldUtils.getValue();
+
+    if (!nameValue)
+    {
+        nameFieldUtils.addError('Необходимо указать имя');
+        return;
+    }
+
+    if (!emailValue)
+    {
+        emailFieldUtils.addError('Необходимо указать почту');
+        return;
+    }
+
+    if (selectPrize.value === 'none')
+    {
+        selectPrize.classList.add(ERROR_CLASS_NAME);
+        return;
+    }
+
     const data =
         {
-            name: nameFieldUtils.getValue(),
-            email: emailFieldUtils.getValue(),
+            name: nameValue,
+            email: emailValue,
+            prize: selectPrize.value
         };
 
     const url = new URL('http://inno-ijl.ru/multystub/stc-21-03/feedback');
     url.search = new URLSearchParams(data).toString();
 
-    fetch(url.toString());
+    fetch(url.toString())
+        .then(data => data.json())
+        .then((data) =>
+        {
+            popupToggle();
+            nameFieldUtils.reset();
+            emailFieldUtils.reset();
+        });
 }
 
 form.addEventListener('submit', handleSubmit);
