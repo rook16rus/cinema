@@ -1,10 +1,10 @@
-import {toMinutes, toHour, getRandomToMax} from "./utils";
+import {normalize, getRandomIntFromZero} from "./utils";
 
 export class Film {
     constructor(filmData)
     {
         this.data = filmData;
-        this.time = `${toHour(getRandomToMax(24))}:${toMinutes(getRandomToMax(6))}`
+        this.time = `${normalize(getRandomIntFromZero(14)+9)}:${normalize(getRandomIntFromZero(11)*5)}`
     }
 
     getTime()

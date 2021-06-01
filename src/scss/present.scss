@@ -95,8 +95,8 @@
     margin-bottom: 25px;
 
     &.active .present-form__label {
-      top: -6px;
-      transform: none;
+      top: 0;
+      transform: translateY(-6px);
       background-color: #fff;
       transition: 0.3s;
     }
@@ -150,8 +150,7 @@
 }
 
 .present-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  appearance: none;
 
   background: #DEDEDE url("../../images/select-arrow.svg") no-repeat center right 12px;
 

@@ -103,6 +103,12 @@ function handleSubmit(event)
         return;
     }
 
+    if(!/^[\w-]{2,16}@[\w]{3,6}\.(ru|com)$/i.test(emailValue))
+    {
+        emailFieldUtils.addError('Не валидный email');
+        return;
+    }
+
     if (selectPrize.value === 'none')
     {
         selectPrize.classList.add(ERROR_CLASS_NAME);

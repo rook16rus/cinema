@@ -1,14 +1,9 @@
-export function getRandomToMax(max)
+export function getRandomIntFromZero(max)
 {
     return Math.ceil(Math.random() * (max + 1)) - 1;
 }
 
-export function toHour(num)
+export function normalize(num)
 {
     return `${num}`.padStart(2, '0')
-}
-
-export function toMinutes(num)
-{
-    return String(num).padEnd(2, '0')
 }
