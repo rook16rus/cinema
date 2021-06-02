@@ -48,6 +48,10 @@ module.exports = {
             filename: "index.html",
             template: "src/index.html"
         }),
+        new HtmlWebpackPlugin({
+            filename: "film.html",
+            template: "src/film.html"
+        }),
         new MiniCssExtractPlugin({
             filename: "style.css"
         }),
@@ -56,5 +60,6 @@ module.exports = {
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
         }),
+
     ],
 };
