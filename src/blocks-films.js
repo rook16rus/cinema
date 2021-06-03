@@ -36,6 +36,7 @@ function renderFilmBlock (posterUrlPreview, filmTitle)
 
     const link = document.createElement('a');
     link.classList.add('films-catalog__item-link');
+    link.href = 'film.html';
 
     const  article = document.createElement('article');
     article.classList.add('films-catalog__item-article');

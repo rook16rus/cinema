@@ -1,10 +1,349 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Фильм "Живое"</title>
 </head>
 <body>
+<header class="header header_gradient">
+    <nav class="main-nav" aria-labelledby="main_menu_label">
+        <div class="main-nav__wrapper container">
+            <div class="main-nav__col main-nav__col_logo">
+                <h2 class="visually-hidden" id="main_menu_label">Главное меню</h2>
+                <a title="Кинотеатр Иннополис" target="_blank" href="#" class="logo">
+                    <img class="logo__photo" src="../images/logo-innopolis-university.svg" width="156" height="40"
+                         alt="Логотип университета Иннополис">
+                </a>
+            </div>
+            <div class="main-nav__col main-nav__col_nav">
+                <div class="main-nav__row-wrapper">
+                    <div class="main-nav__row">
+                        <ul class="main-nav__contact-list">
+                            <li class="main-nav__contact-item"><a class="main-nav__link link"
+                                                                  title="Кинотеатр Иннополис"
+                                                                  target="_blank" href="tel:88003551256">+7 (800) 355
+                                12-56</a></li>
+                            <li class="main-nav__contact-item"><a class=" main-nav__link link link_decoration_underline"
+                                                                  title="Кинотеатр Иннополис" target="_blank"
+                                                                  href="mailto:kino@innopolis.ru">kino@innopolis.ru</a>
+                            </li>
+                            <li class="main-nav__contact-item">
+                                <address class="main-nav__link h-card link"><span
+                                        class="p-street-address">ул.Спортивная д.1</span></address>
+                            </li>
+                        </ul>
+                        <a title="Кинотеатр Иннополис" target="_blank" href="tel:88005553535"
+                           class="button button-phone button_color_white">Заказать звонок</a>
+                    </div>
+                    <div class="main-nav__row">
+                        <ul class="main-nav__navbar-list">
+                            <li class="main-nav__navbar-item"><a class="main-nav__link link link_transform_uppercase"
+                                                                 href="#" target="_blank" title="Кинотеатр Иннополис">Event
+                                details</a></li>
+                            <li class="main-nav__navbar-item"><a class="main-nav__link link link_transform_uppercase"
+                                                                 href="#" target="_blank" title="Кинотеатр Иннополис">Speakers</a>
+                            </li>
+                            <li class="main-nav__navbar-item"><a class="main-nav__link link link_transform_uppercase"
+                                                                 href="#" target="_blank" title="Кинотеатр Иннополис">Sponsors</a>
+                            </li>
+                            <li class="main-nav__navbar-item"><a class="main-nav__link link link_transform_uppercase"
+                                                                 href="#" target="_blank" title="Кинотеатр Иннополис">Past
+                                events</a></li>
+                            <li class="main-nav__navbar-item"><a class="main-nav__link link link_transform_uppercase"
+                                                                 href="#" target="_blank" title="Кинотеатр Иннополис">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main-nav__col main-nav__col_language">
+                <label for="language-select" class="visually-hidden">Выберите язык</label>
+                <select name="language-select" id="language-select" class="language-select main-nav__language">
+                    <option class="language-select__item" value="RU" selected>RU</option>
+                    <option class="language-select__item" value="EN">EN</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+</header>
 
+<main>
+    <section class="film-card">
+        <div class="container">
+            <div class="film-card__wrapper">
+                <div class="film-card__img card-img">
+                    <img src="../images/movie-pic.jpg" width="442" height="510" alt="">
+                </div>
+                <div class="film-card__info film-info">
+                    <h1 class="card-info__title">Живое</h1>
+                    <div class="film-card__rate film-rate">
+                        <span class="visually-hidden" id="film_rate_description">Рейтинг 5</span>
+                        <div class="film-rate__score">
+                            <img class="film-rate__star" src="../images/star.svg" width="16" height="16"
+                                 aria-labelledby="film_rate_description" alt="">
+                            <img class="film-rate__star" src="../images/star.svg" width="16" height="16"
+                                 aria-labelledby="film_rate_description" alt="">
+                            <img class="film-rate__star" src="../images/star.svg" width="16" height="16"
+                                 aria-labelledby="film_rate_description" alt="">
+                            <img class="film-rate__star" src="../images/star.svg" width="16" height="16"
+                                 aria-labelledby="film_rate_description" alt="">
+                            <img class="film-rate__star" src="../images/star.svg" width="16" height="16"
+                                 aria-labelledby="film_rate_description" alt="">
+                            <span class="film-rate__count">5.0</span>
+                        </div>
+                        <div class="film-rate__critique">
+                            <span class="film-rate__critique-score">9/10</span>
+                            <p class="film-rate__critique-name">Rotten Tomatoes</p>
+                        </div>
+                    </div>
+                    <div class="film-card__meta meta-row">
+                        <div class="meta-column meta-time">
+                            <time datetime="2019-11-25">25 Ноябрь 2019</time>
+                        </div>
+                        <div class="meta-column meta-views"><span>2.5K Views</span></div>
+                        <div class="meta-column meta-likes"><span>200 Likes</span></div>
+                    </div>
+                    <p class="film-card__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam. Duis aute irure dolor in reprehenderit in
+                        voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <dl class="film-card__details film-details">
+                        <div class="film-details__item">
+                            <dt class="film-details__title">Страна</dt>
+                            <dd class="film-details__description">Дания</dd>
+                        </div>
+                        <div class="film-details__item">
+                            <dt class="film-details__title">Режиссер</dt>
+                            <dd class="film-details__description">Михаэль Ноер</dd>
+                        </div>
+                        <div class="film-details__item">
+                            <dt class="film-details__title">Сценарий</dt>
+                            <dd class="film-details__description">Джеспер Финк, Михаэль Ноер</dd>
+                        </div>
+                        <div class="film-details__item">
+                            <dt class="film-details__title">Продюсер</dt>
+                            <dd class="film-details__description">Матильда Аппелин, Рене Эзра, Томас Радур, ...</dd>
+                        </div>
+                        <div class="film-details__item">
+                            <dt class="film-details__title">Оператор</dt>
+                            <dd class="film-details__description">Стурла Брандт Грёвлен</dd>
+                        </div>
+                        <div class="film-details__item">
+                            <dt class="film-details__title">Композитор</dt>
+                            <dd class="film-details__description">Руне Тонсгор Сёренсен</dd>
+                        </div>
+                        <div class="film-details__item">
+                            <dt class="film-details__title">Художник</dt>
+                            <dd class="film-details__description">Сорен Шварцберг, Луиз Ниссен</dd>
+                        </div>
+                        <div class="film-details__item">
+                            <dt class="film-details__title">Время</dt>
+                            <dd class="film-details__description"><b>104 мин. / 01:44</b></dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="other-films">
+        <div class="container">
+            <h2 class="other-films__title">Другие фильмы</h2>
+            <article class="other-films__collection films-collection">
+                <header class="films-collection__header">
+                    <h3 class="films-collection__title">Экшн</h3>
+                    <p class="films-collection__pagination"><span class="current-page">1</span>/<span class="all-pages">30</span>
+                    </p>
+                </header>
+                <ul class="films-collection__list">
+                    <li class="films-collection__item">
+                        <div class="films-collection__item-info">
+                            <h4 class="films-collection__item-title">Лёд</h4>
+                            <p class="films-collection__item-description">2018, фильм Ивана Иванова</p>
+                        </div>
+                        <img src="../images/film-collection-photo.jpg" width="129" height="146" alt="Обложка фильма"
+                             class="films-collection__item-photo">
+                    </li>
+                    <li class="films-collection__item">
+                        <div class="films-collection__item-info">
+                            <h4 class="films-collection__item-title">Лёд</h4>
+                            <p class="films-collection__item-description">2018, фильм Ивана Иванова</p>
+                        </div>
+                        <img src="../images/film-collection-photo.jpg" width="129" height="146" alt="Обложка фильма"
+                             class="films-collection__item-photo">
+                    </li>
+                    <li class="films-collection__item">
+                        <div class="films-collection__item-info">
+                            <h4 class="films-collection__item-title">Лёд</h4>
+                            <p class="films-collection__item-description">2018, фильм Ивана Иванова</p>
+                        </div>
+                        <img src="../images/film-collection-photo.jpg" width="129" height="146" alt="Обложка фильма"
+                             class="films-collection__item-photo">
+                    </li>
+                    <li class="films-collection__item">
+                        <div class="films-collection__item-info">
+                            <h4 class="films-collection__item-title">Лёд</h4>
+                            <p class="films-collection__item-description">2018, фильм Ивана Иванова</p>
+                        </div>
+                        <img src="../images/film-collection-photo.jpg" width="129" height="146" alt="Обложка фильма"
+                             class="films-collection__item-photo">
+                    </li>
+                    <li class="films-collection__item">
+                        <div class="films-collection__item-info">
+                            <h4 class="films-collection__item-title">Лёд</h4>
+                            <p class="films-collection__item-description">2018, фильм Ивана Иванова</p>
+                        </div>
+                        <img src="../images/film-collection-photo.jpg" width="129" height="146" alt="Обложка фильма"
+                             class="films-collection__item-photo">
+                    </li>
+                    <li class="films-collection__item">
+                        <div class="films-collection__item-info">
+                            <h4 class="films-collection__item-title">Лёд</h4>
+                            <p class="films-collection__item-description">2018, фильм Ивана Иванова</p>
+                        </div>
+                        <img src="../images/film-collection-photo.jpg" width="129" height="146" alt="Обложка фильма"
+                             class="films-collection__item-photo">
+                    </li>
+                </ul>
+            </article>
+            <article class="other-films__collection films-collection">
+                <header class="films-collection__header">
+                    <h3 class="films-collection__title">Драма</h3>
+                    <p class="films-collection__pagination"><span class="current-page">1</span>/<span class="all-pages">30</span>
+                    </p>
+                </header>
+                <ul class="films-collection__list">
+                    <li class="films-collection__item">
+                        <div class="films-collection__item-info">
+                            <h4 class="films-collection__item-title">Лёд</h4>
+                            <p class="films-collection__item-description">2018, фильм Ивана Иванова</p>
+                        </div>
+                        <img src="../images/film-collection-photo.jpg" width="129" height="146" alt="Обложка фильма"
+                             class="films-collection__item-photo">
+                    </li>
+                    <li class="films-collection__item">
+                        <div class="films-collection__item-info">
+                            <h4 class="films-collection__item-title">Лёд</h4>
+                            <p class="films-collection__item-description">2018, фильм Ивана Иванова</p>
+                        </div>
+                        <img src="../images/film-collection-photo.jpg" width="129" height="146" alt="Обложка фильма"
+                             class="films-collection__item-photo">
+                    </li>
+                    <li class="films-collection__item">
+                        <div class="films-collection__item-info">
+                            <h4 class="films-collection__item-title">Лёд</h4>
+                            <p class="films-collection__item-description">2018, фильм Ивана Иванова</p>
+                        </div>
+                        <img src="../images/film-collection-photo.jpg" width="129" height="146" alt="Обложка фильма"
+                             class="films-collection__item-photo">
+                    </li>
+                    <li class="films-collection__item">
+                        <div class="films-collection__item-info">
+                            <h4 class="films-collection__item-title">Лёд</h4>
+                            <p class="films-collection__item-description">2018, фильм Ивана Иванова</p>
+                        </div>
+                        <img src="../images/film-collection-photo.jpg" width="129" height="146" alt="Обложка фильма"
+                             class="films-collection__item-photo">
+                    </li>
+                    <li class="films-collection__item">
+                        <div class="films-collection__item-info">
+                            <h4 class="films-collection__item-title">Лёд</h4>
+                            <p class="films-collection__item-description">2018, фильм Ивана Иванова</p>
+                        </div>
+                        <img src="../images/film-collection-photo.jpg" width="129" height="146" alt="Обложка фильма"
+                             class="films-collection__item-photo">
+                    </li>
+                    <li class="films-collection__item">
+                        <div class="films-collection__item-info">
+                            <h4 class="films-collection__item-title">Лёд</h4>
+                            <p class="films-collection__item-description">2018, фильм Ивана Иванова</p>
+                        </div>
+                        <img src="../images/film-collection-photo.jpg" width="129" height="146" alt="Обложка фильма"
+                             class="films-collection__item-photo">
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+
+    <div class="main-footer__row main-footer__row_content">
+        <div class="main-footer__col main-footer__col_contact">
+            <a href="#" class="main-footer__logo logo">
+                <img class="logo__photo" src="../images/logo-innopolis-university.svg" width="156" height="40"
+                     alt="Логотип университета Иннополис">
+            </a>
+            <p class="main-footer__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam
+            </p>
+            <ul class="main-footer__social-list social-list">
+                <li class="social-list__item"><a title="Кинотеатр Иннополис" target="_blank" href="#"
+                                                 class="social-list__link social-list__link_inst">Instagram</a></li>
+                <li class="social-list__item"><a title="Кинотеатр Иннополис" target="_blank" href="#"
+                                                 class="social-list__link social-list__link_lkd">Linkedin</a></li>
+                <li class="social-list__item"><a title="Кинотеатр Иннополис" target="_blank" href="#"
+                                                 class="social-list__link social-list__link_tw">Twitter</a></li>
+                <li class="social-list__item"><a title="Кинотеатр Иннополис" target="_blank" href="#"
+                                                 class="social-list__link social-list__link_ytu">Youtube</a></li>
+                <li class="social-list__item"><a title="Кинотеатр Иннополис" target="_blank" href="#"
+                                                 class="social-list__link social-list__link_fb">Facebook</a></li>
+            </ul>
+        </div>
+        <div class="main-footer__col main-footer__col_nav">
+            <dl class="main-footer__nav">
+                <dt class="main-footer__nav-title">Site</dt>
+                <dd class="main-footer__nav-description">
+                    <ul class="main-footer__menu-list">
+                        <li class="main-footer__menu-item"><a class="link link_transform_uppercase"
+                                                              title="Кинотеатр Иннополис" target="_blank" href="#">Event
+                            details</a></li>
+                        <li class="main-footer__menu-item"><a class="link link_transform_uppercase"
+                                                              title="Кинотеатр Иннополис" target="_blank" href="#">Speakers</a>
+                        </li>
+                        <li class="main-footer__menu-item"><a class="link link_transform_uppercase"
+                                                              title="Кинотеатр Иннополис" target="_blank" href="#">Sponsors</a>
+                        </li>
+                        <li class="main-footer__menu-item"><a class="link link_transform_uppercase"
+                                                              title="Кинотеатр Иннополис" target="_blank" href="#">Past
+                            events</a></li>
+                        <li class="main-footer__menu-item"><a class="link link_transform_uppercase"
+                                                              title="Кинотеатр Иннополис" target="_blank" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </dd>
+                <dt class="main-footer__nav-title">Contact</dt>
+                <dd class="main-footer__nav-description">
+                    <ul class="main-footer__menu-list">
+                        <li class="main-footer__menu-item"><a class="link" title="Кинотеатр Иннополис"
+                                                              target="_blank" href="tel:88003551256">+7 (800) 355
+                            12-56</a></li>
+                        <li class="main-footer__menu-item"><a class="link" title="Кинотеатр Иннополис"
+                                                              target="_blank" href="mailto:kino@innopolis.ru">kino@innopolis.ru</a>
+                        </li>
+                        <li class="main-footer__menu-item">
+                            <address class="h-card link"><span class="p-street-address">420500, г. Иннополис ул.Университетская, д.1</span>
+                            </address>
+                        </li>
+                        <li class="main-footer__menu-item"><a class="link" title="Кинотеатр Иннополис"
+                                                              target="_blank" href="#">Как добраться</a></li>
+                        <li class="main-footer__menu-item"><a class="link" title="Кинотеатр Иннополис"
+                                                              target="_blank" href="#">Все контакты</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <p class="main-footer__copyright">Copyright @ 2020 Innopolis University . All Rights Reserved.</p>
+    </div>
+</footer>
 </body>
 </html>

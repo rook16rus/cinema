@@ -1,6 +1,6 @@
 .present {
   padding: 18.18rem 0 13.68rem;
-  background-image:url("../../images/present.png"), url("../../images/background-picture-2.jpg");
+  background-image:url("../../../images/present.png"), url("../../../images/background-picture-2.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: 16.5% 13.7%, center bottom -20%;
   background-size: 24.5%, contain;
@@ -77,7 +77,7 @@
   top: 22px;
   right: 22px;
   background-color: transparent;
-  background-image: url(../../images/close-icon.svg);
+  background-image: url(../../../images/close-icon.svg);
   outline: none;
   border: 0;
   cursor: pointer;
@@ -86,7 +86,7 @@
 }
 
 .close:hover {
-  background-image: url(../../images/close-icon-hovered.svg);
+  background-image: url(../../../images/close-icon-hovered.svg);
 }
 
 .present-form {
@@ -152,7 +152,7 @@
 .present-select {
   appearance: none;
 
-  background: #DEDEDE url("../../images/select-arrow.svg") no-repeat center right 12px;
+  background: #DEDEDE url("../../../images/select-arrow.svg") no-repeat center right 12px;
 
   &.selected {
     background-color: #fff;

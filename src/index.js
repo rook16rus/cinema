@@ -3,7 +3,7 @@ import "normalize.css"
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
 import './blocks-films'
-import "./scss/style.scss"
+import "./scss/main/style.scss"
 import "./films-table"
 import "./present"
 
