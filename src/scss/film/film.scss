@@ -1,3 +1,151 @@
 .header_gradient {
   background: linear-gradient(89.92deg, #251A1B 24.47%, #4F272F 64.85%);
 }
+
+.film-card {
+  margin: 25px 22px 45px 24px;
+  padding: 40px 65px 42px;
+  background-color: #F9F9FB;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__img {
+    padding-right: 40px;
+    border-right: 1px solid rgba(0, 0, 0, 0.13);
+  }
+
+  &__info {
+    padding-left: 38px;
+  }
+}
+
+.film-info {
+  display: grid;
+  grid-template-rows: repeat(3, auto) 1fr auto;
+
+  font-size: 12px;
+  color: #A1A1A1;
+
+  &__title {
+    font-weight: 600;
+    font-size: 60px;
+    color: #333;
+
+    margin: -38px 0 25px;
+  }
+
+  &__rate {
+    margin-bottom: 30px;
+  }
+
+  &__meta {
+    margin-bottom: 28px;
+  }
+
+  &__description {
+    margin: 0;
+  }
+
+  &__details {
+    margin: 0 0 30px;
+  }
+}
+
+.film-rate {
+  display: flex;
+
+  &__score {
+    display: flex;
+    align-items: center;
+
+    margin-right: 20px;
+  }
+
+  &__star-list {
+    display: flex;
+    margin-right: 6px;
+  }
+
+  &__star {
+    margin-right: 3px;
+  }
+
+  &__count {
+    font-size: 13px;
+  }
+
+  &__critique {
+    display: flex;
+    align-items: center;
+  }
+
+  &__critique-score {
+    font-size: 11px;
+    color: #A3CC40;
+  }
+
+  &__critique-name {
+    margin: 0 0 0 2px;
+    font-size: 13px;
+  }
+}
+
+.meta-row {
+  display: flex;
+
+  font-weight: 600;
+  font-size: 11px;
+  color: #4C4D4F;
+}
+
+.meta-column {
+  display: flex;
+  align-items: center;
+
+  margin-right: 35px;
+
+  &::before {
+    content: "";
+
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    background: no-repeat center;
+  }
+}
+
+.meta-time::before {
+  background-image: url(../../../images/date_range.svg);
+}
+
+.meta-views::before {
+  background-image: url(../../../images/remove_red_eye.svg);
+}
+
+.meta-likes::before {
+  background-image: url(../../../images/favorite.svg);
+}
+
+.film-details {
+  font-size: 11px;
+  &__item {
+    display: flex;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(161, 161, 161, 0.22);
+  }
+
+  &__title {
+    font-weight: 600;
+    color: #A3CC40;
+
+    min-width: 100px;
+  }
+
+  &__description {
+    margin: 0;
+    color: #696969;
+  }
+}
