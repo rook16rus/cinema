@@ -11,10 +11,7 @@ const kinopoiskapiunofficialRequest = (url) =>
 {
     return fetch(url,
         {
-            headers:
-                {
-                    ...apiHeaders
-                },
+            headers: apiHeaders,
             cors: 'no-cors'
         });
 };
