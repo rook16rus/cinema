@@ -2,10 +2,10 @@ import 'babel-polyfill';
 import "normalize.css"
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
-import './blocks-films'
+import '../target/blocks-films'
 import "./scss/main/style.scss"
-import "./films-table"
-import "./present"
+import "../target/films-table"
+import "../target/present"
 
 
 $(document).ready(function(){
