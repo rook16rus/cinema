@@ -46,12 +46,12 @@ var filmDetailsRequest = function filmDetailsRequest(id) {
   return kinopoiskapiunofficialRequest("https://kinopoiskapiunofficial.tech/api/v2.1/films/".concat(id));
 };
 
-function renderFilmBlock(posterUrlPreview, filmTitle) {
+function renderFilmBlock(posterUrlPreview, filmTitle, id) {
   var li = document.createElement('li');
   li.classList.add('films-catalog__item');
   var link = document.createElement('a');
   link.classList.add('films-catalog__item-link');
-  link.href = 'film.html';
+  link.href = "film.html?id=".concat(id);
   var article = document.createElement('article');
   article.classList.add('films-catalog__item-article');
   var span = document.createElement('span');
@@ -107,7 +107,7 @@ var fetchBlockFilms = /*#__PURE__*/function () {
                   while (1) {
                     switch (_context2.prev = _context2.next) {
                       case 0:
-                        _renderFilmBlock = renderFilmBlock(film.posterUrlPreview, film.nameRu), _renderFilmBlock2 = _slicedToArray(_renderFilmBlock, 2), filmBlock = _renderFilmBlock2[0], desc = _renderFilmBlock2[1];
+                        _renderFilmBlock = renderFilmBlock(film.posterUrlPreview, film.nameRu, film.filmId), _renderFilmBlock2 = _slicedToArray(_renderFilmBlock, 2), filmBlock = _renderFilmBlock2[0], desc = _renderFilmBlock2[1];
                         filmBlocksMap.set(film.filmId, filmBlock);
                         requests.push(new Promise( /*#__PURE__*/function () {
                           var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(resolve, reject) {

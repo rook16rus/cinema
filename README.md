@@ -17,5 +17,5 @@ npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/polyfill
 ## Запуск
 
 ```shell
-npm babel js -d target --watch
+npx babel src -d target --watch
 ```
