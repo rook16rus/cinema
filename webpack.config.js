@@ -32,7 +32,7 @@ module.exports = {
                 test: /\.(gif|png|jpe?g|svg|ttf)$/,
                 type: "asset/resource"
             },
-            {
+            /*{
                 test: /\.m?js$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
@@ -41,7 +41,7 @@ module.exports = {
                         presets: ['@babel/preset-env']
                     }
                 }
-            },
+            },*/
         ]
     },
     devServer: {

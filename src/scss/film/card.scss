@@ -43,7 +43,7 @@
   }
 
   &__description {
-    margin: 0;
+    margin: 0 0 20px;
   }
 
   &__details {
@@ -64,10 +64,24 @@
   &__star-list {
     display: flex;
     margin-right: 6px;
+    color: #687250;
+
+    &:hover {
+      color: #A3CC40;
+    }
   }
 
   &__star {
-    margin-right: 3px;
+    padding-right: 3px;
+    cursor: pointer;
+
+    &:hover ~ .film-rate__star {
+      color: #687250;
+    }
+
+    &_selected {
+      color: #A3CC40;
+    }
   }
 
   &__count {
@@ -112,6 +126,7 @@
     height: 12px;
     margin-right: 5px;
     background: no-repeat center;
+    cursor: pointer;
   }
 }
 
@@ -124,7 +139,21 @@
 }
 
 .meta-likes::before {
-  background-image: url(../../../images/favorite.svg);
+  display: none;
+}
+
+.like-icon {
+  color: #687250;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.like-icon:hover {
+  color: #A3CC40;
+}
+
+.like-icon-liked {
+  color: #A3CC40;
 }
 
 .film-details {

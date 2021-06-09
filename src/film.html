@@ -75,40 +75,60 @@
         <div class="container">
             <div class="film-card__wrapper">
                 <div class="film-card__img card-img">
-                    <img src="../images/movie-pic.jpg" width="442" height="510" alt="">
+                    <img id="single_film_poster" src="../images/movie-pic.jpg" width="442" height="510" alt="">
                 </div>
                 <div class="film-card__info film-info">
-                    <h1 class="film-info__title">Живое</h1>
+                    <h1 class="film-info__title" id="single_film_header">Загрузка...</h1>
                     <div class="film-info__rate film-rate">
                         <span class="visually-hidden" id="film_rate_description">Рейтинг 5</span>
                         <div class="film-rate__score">
                             <div class="film-rate__star-list">
-                                <img class="film-rate__star" src="../images/star.svg" width="16" height="16"
-                                     aria-labelledby="film_rate_description" alt="">
-                                <img class="film-rate__star" src="../images/star.svg" width="16" height="16"
-                                     aria-labelledby="film_rate_description" alt="">
-                                <img class="film-rate__star" src="../images/star.svg" width="16" height="16"
-                                     aria-labelledby="film_rate_description" alt="">
-                                <img class="film-rate__star" src="../images/star.svg" width="16" height="16"
-                                     aria-labelledby="film_rate_description" alt="">
-                                <img class="film-rate__star" src="../images/star.svg" width="16" height="16"
-                                     aria-labelledby="film_rate_description" alt="">
+                                <svg data-value="1" class="film-rate__star" width="16" height="16"
+                                     aria-labelledby="film_rate_description">
+                                    <path d="M7.9925 0.5C3.8525 0.5 0.5 3.86 0.5 8C0.5 12.14 3.8525 15.5 7.9925 15.5C12.14 15.5 15.5 12.14 15.5 8C15.5 3.86 12.14 0.5 7.9925 0.5ZM11.1725 12.5L8 10.5875L4.8275 12.5L5.6675 8.8925L2.87 6.47L6.56 6.155L8 2.75L9.44 6.1475L13.13 6.4625L10.3325 8.885L11.1725 12.5Z"
+                                          fill="currentColor"/>
+                                </svg>
+                                <svg data-value="2" class="film-rate__star" width="16" height="16"
+                                     aria-labelledby="film_rate_description">
+                                    <path d="M7.9925 0.5C3.8525 0.5 0.5 3.86 0.5 8C0.5 12.14 3.8525 15.5 7.9925 15.5C12.14 15.5 15.5 12.14 15.5 8C15.5 3.86 12.14 0.5 7.9925 0.5ZM11.1725 12.5L8 10.5875L4.8275 12.5L5.6675 8.8925L2.87 6.47L6.56 6.155L8 2.75L9.44 6.1475L13.13 6.4625L10.3325 8.885L11.1725 12.5Z"
+                                          fill="currentColor"/>
+                                </svg>
+                                <svg data-value="3" class="film-rate__star" width="16" height="16"
+                                     aria-labelledby="film_rate_description">
+                                    <path d="M7.9925 0.5C3.8525 0.5 0.5 3.86 0.5 8C0.5 12.14 3.8525 15.5 7.9925 15.5C12.14 15.5 15.5 12.14 15.5 8C15.5 3.86 12.14 0.5 7.9925 0.5ZM11.1725 12.5L8 10.5875L4.8275 12.5L5.6675 8.8925L2.87 6.47L6.56 6.155L8 2.75L9.44 6.1475L13.13 6.4625L10.3325 8.885L11.1725 12.5Z"
+                                          fill="currentColor"/>
+                                </svg>
+                                <svg data-value="4" class="film-rate__star" width="16" height="16"
+                                     aria-labelledby="film_rate_description">
+                                    <path d="M7.9925 0.5C3.8525 0.5 0.5 3.86 0.5 8C0.5 12.14 3.8525 15.5 7.9925 15.5C12.14 15.5 15.5 12.14 15.5 8C15.5 3.86 12.14 0.5 7.9925 0.5ZM11.1725 12.5L8 10.5875L4.8275 12.5L5.6675 8.8925L2.87 6.47L6.56 6.155L8 2.75L9.44 6.1475L13.13 6.4625L10.3325 8.885L11.1725 12.5Z"
+                                          fill="currentColor"/>
+                                </svg>
+                                <svg data-value="5" class="film-rate__star" width="16" height="16"
+                                     aria-labelledby="film_rate_description">
+                                    <path d="M7.9925 0.5C3.8525 0.5 0.5 3.86 0.5 8C0.5 12.14 3.8525 15.5 7.9925 15.5C12.14 15.5 15.5 12.14 15.5 8C15.5 3.86 12.14 0.5 7.9925 0.5ZM11.1725 12.5L8 10.5875L4.8275 12.5L5.6675 8.8925L2.87 6.47L6.56 6.155L8 2.75L9.44 6.1475L13.13 6.4625L10.3325 8.885L11.1725 12.5Z"
+                                          fill="currentColor"/>
+                                </svg>
                             </div>
-                            <span class="film-rate__count">5.0</span>
+                            <span class="film-rate__count" id="single_film_rate">5.0</span>
                         </div>
                         <div class="film-rate__critique">
                             <span class="film-rate__critique-score">9/10</span>
-                            <p class="film-rate__critique-name">Rotten Tomatoes</p>
+                            <p class="film-rate__critique-name">Inno Rating</p>
                         </div>
                     </div>
                     <div class="film-info__meta meta-row">
                         <div class="meta-column meta-time">
-                            <time datetime="2019-11-25">25 Ноябрь 2019</time>
+                            <time datetime="2019-11-25" id="single_film_date">25 Ноябрь 2019</time>
                         </div>
-                        <div class="meta-column meta-views"><span>2.5K Views</span></div>
-                        <div class="meta-column meta-likes"><span>200 Likes</span></div>
+                        <div class="meta-column meta-views"><span id="single_film_views">2.5K Views</span></div>
+                        <div class="meta-column meta-likes">
+                            <svg id="like-icon" class="like-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" d="M6 10.675L5.275 10.015C2.7 7.68 1 6.14 1 4.25C1 2.71 2.21 1.5 3.75 1.5C4.62 1.5 5.455 1.905 6 2.545C6.545 1.905 7.38 1.5 8.25 1.5C9.79 1.5 11 2.71 11 4.25C11 6.14 9.3 7.68 6.725 10.02L6 10.675Z"/>
+                            </svg>
+                            <span id="single_film_likes">200 Likes</span>
+                        </div>
                     </div>
-                    <p class="film-info__description">
+                    <p class="film-info__description" id="single_film_desc">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam. Duis aute irure dolor in reprehenderit in
@@ -164,7 +184,7 @@
                     <p class="films-collection__pagination"><span class="current-page">1</span>/<span class="all-pages">30</span>
                     </p>
                 </header>
-                <ul class="films-collection__list owl-carousel">
+                <ul class="films-collection__list">
                     <li class="films-collection__item">
                         <div class="films-collection__item-info">
                             <h4 class="films-collection__item-title">Лёд</h4>
