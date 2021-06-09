@@ -32,15 +32,19 @@ const films =
 
 
 const tBody = document.querySelector('.table__tbody');
-
-let counter = 0;
-let iteration;
-for (iteration of films)
+if (tBody !== null)
 {
-    const film = new Film(iteration);
-    if (film.isNotForAdult())
+    let counter = 0;
+    let iteration;
+    for (iteration of films)
     {
-        tBody.innerHTML += film.renderFilmTableItem(counter);
-        counter++
+        const film = new Film(iteration);
+        if (film.isNotForAdult())
+        {
+            tBody.innerHTML += film.renderFilmTableItem(counter);
+            counter++
+        }
     }
 }
+
+

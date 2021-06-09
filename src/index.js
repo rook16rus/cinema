@@ -6,6 +6,7 @@ import './blocks-films'
 import "./scss/main/style.scss"
 import "./films-table"
 import "./present"
+import "./single-film"
 
 
 $(document).ready(function(){
