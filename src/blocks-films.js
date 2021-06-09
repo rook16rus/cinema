@@ -28,14 +28,14 @@ if (filmsCatalog !== null)
         return kinopoiskapiunofficialRequest(`https://kinopoiskapiunofficial.tech/api/v2.1/films/${id}`)
     };
 
-    function renderFilmBlock (posterUrlPreview, filmTitle)
+    function renderFilmBlock (posterUrlPreview, filmTitle, filmId)
     {
         const li = document.createElement('li');
         li.classList.add('films-catalog__item');
 
         const link = document.createElement('a');
         link.classList.add('films-catalog__item-link');
-        link.href = 'film.html';
+        link.href = `film.html?id=${filmId}`;
 
         const  article = document.createElement('article');
         article.classList.add('films-catalog__item-article');
@@ -82,7 +82,7 @@ if (filmsCatalog !== null)
 
         data.films.forEach(async (film) =>
         {
-            const [filmBlock, desc] = renderFilmBlock(film.posterUrlPreview, film.nameRu);
+            const [filmBlock, desc] = renderFilmBlock(film.posterUrlPreview, film.nameRu, film.filmId);
             filmBlocksMap.set(film.filmId, filmBlock);
 
             requests.push(new Promise(async (resolve, reject) =>
