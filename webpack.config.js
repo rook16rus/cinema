@@ -4,10 +4,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-    entry: './src/index.js',
     entry: {
         main: './src/index.js',
-        film: './src/index.js',
+        film: './src/single-film.js',
        },
     output: {
         path: path.resolve(__dirname, 'dist'),
