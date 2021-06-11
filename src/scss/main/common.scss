@@ -218,3 +218,23 @@ body {
 .p-street-address {
   font-style: normal;
 }
+
+.to-top {
+  position: fixed;
+  right: 7.5rem;
+  bottom: 7.5rem;
+  width: 75px;
+  height: 75px;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.to-top img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}

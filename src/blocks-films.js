@@ -1,8 +1,6 @@
 const filmsCatalog = document.getElementById('films_catalog_list');
 if (filmsCatalog !== null)
 {
-    filmsCatalog.innerHTML = '';
-
     const apiHeaders =
         {
             'accept': 'application/json',
@@ -107,6 +105,7 @@ if (filmsCatalog !== null)
 
         await Promise.all(requests);
 
+        filmsCatalog.innerHTML = '';
         const elements = [...filmBlocksMap.values()].slice(0, 9);
 
         filmsCatalog.append(...elements);

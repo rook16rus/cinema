@@ -33,3 +33,8 @@ $('.owl-carousel').owlCarousel({
     animateIn: 'fadeIn',
     animateOut: 'fadeOut'
 });
+
+$('.to-top').click(function ()
+{
+    $('html').animate({ scrollTop: 0}, 1500);
+});

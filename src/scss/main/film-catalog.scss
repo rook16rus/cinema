@@ -100,3 +100,28 @@
     margin: 0 0 1.36rem;
   }
 }
+
+.skeleton-film-box {
+  width: auto;
+  height: 283px;
+  animation: shine-avatar 1.6s infinite linear;
+}
+
+@keyframes shine-avatar {
+  0% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: gray;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+$delay: -.2s;
+@for $i from 1 through 9 {
+  .skeleton-film-box:nth-child(#{$i}) {
+      animation-delay: $delay;
+  }
+  $delay: $delay - 0.2;
+}
