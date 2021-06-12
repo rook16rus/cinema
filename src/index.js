@@ -34,7 +34,20 @@ $('.owl-carousel').owlCarousel({
     animateOut: 'fadeOut'
 });
 
+
 $('.to-top').click(function ()
 {
     $('html').animate({ scrollTop: 0}, 1500);
+});
+
+/* Вариант без jquery */
+
+const scrollToTop = document.querySelector('.to-top');
+
+scrollToTop.addEventListener('click', function ()
+{
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    })
 });

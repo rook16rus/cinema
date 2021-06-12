@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-    entry: './src/index.js',
     entry: {
         main: './src/index.js',
         film: './src/index.js',
@@ -32,7 +31,7 @@ module.exports = {
                 test: /\.(gif|png|jpe?g|svg|ttf)$/,
                 type: "asset/resource"
             },
-            /*{
+            {
                 test: /\.m?js$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
@@ -41,7 +40,7 @@ module.exports = {
                         presets: ['@babel/preset-env']
                     }
                 }
-            },*/
+            },
         ]
     },
     devServer: {
