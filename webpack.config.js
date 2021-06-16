@@ -5,12 +5,12 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: {
-        main: './src/index.js',
-        film: './src/index.js',
+        main: path.resolve(__dirname, 'src', 'index.js'),
+        singleFilm: path.resolve(__dirname, 'src', 'single-film.js'),
        },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: '[chunkhash].js'
     },
     mode: "development",
     module: {
@@ -49,11 +49,13 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename: "index.html",
-            template: "src/index.html"
+            template: "src/index.html",
+            chunks: ['main']
         }),
         new HtmlWebpackPlugin({
             filename: "film.html",
-            template: "src/film.html"
+            template: "src/film.html",
+            chunks: ['singleFilm']
         }),
         new MiniCssExtractPlugin({
             filename: "style.css"

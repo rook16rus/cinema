@@ -2,7 +2,7 @@ import {Film} from "./film"
 
 const films =
     [
-         {
+        {
             time: '10:00',
             name: 'Человек паук',
             genre: 'Фантастика, боевик, приключения',
@@ -30,21 +30,17 @@ const films =
     ];
 
 
-
 const tBody = document.querySelector('.table__tbody');
-if (tBody !== null)
-{
-    let counter = 0;
-    let iteration;
-    for (iteration of films)
-    {
-        const film = new Film(iteration);
-        if (film.isNotForAdult())
-        {
-            tBody.innerHTML += film.renderFilmTableItem(counter);
-            counter++
-        }
+
+let counter = 0;
+let iteration;
+for (iteration of films) {
+    const film = new Film(iteration);
+    if (film.isNotForAdult()) {
+        tBody.innerHTML += film.renderFilmTableItem(counter);
+        counter++
     }
 }
+
 
 
