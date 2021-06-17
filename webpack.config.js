@@ -61,8 +61,10 @@ module.exports = {
             chunkFilename: '[chunkhash].css'
         }),
         new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery',
+                $: 'jquery',
+                jQuery: 'jquery',
+                'window.$': 'jquery',
+                'window.jQuery': 'jquery',
         }),
     ],
 };

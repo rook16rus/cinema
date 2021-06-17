@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import 'babel-polyfill'
 import "normalize.css"
 import 'owl.carousel/dist/assets/owl.carousel.css'

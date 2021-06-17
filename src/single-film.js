@@ -1,6 +1,5 @@
 import * as util from "./utils"
 import 'babel-polyfill';
-import $ from 'jquery';
 import "./scss/main/style.scss"
 
 const likes = document.getElementById('single_film_likes');
