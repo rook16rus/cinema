@@ -60,5 +60,9 @@ module.exports = {
         new MiniCssExtractPlugin({
             chunkFilename: '[chunkhash].css'
         }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+        }),
     ],
 };
