@@ -7,7 +7,7 @@ module.exports = {
     entry: {
         main: path.resolve(__dirname, 'src', 'index.js'),
         singleFilm: path.resolve(__dirname, 'src', 'single-film.js'),
-       },
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[chunkhash].js'
@@ -58,13 +58,7 @@ module.exports = {
             chunks: ['singleFilm']
         }),
         new MiniCssExtractPlugin({
-            filename: "style.css"
+            chunkFilename: '[chunkhash].css'
         }),
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery'
-        }),
-
     ],
 };

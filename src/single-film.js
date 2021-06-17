@@ -1,4 +1,6 @@
 import * as util from "./utils"
+import 'babel-polyfill';
+import "./scss/main/style.scss"
 
 const likes = document.getElementById('single_film_likes');
 const searchParams = new URLSearchParams(location.search);
@@ -52,17 +54,17 @@ const liked = localStorage.getItem(FILM_KEY);
 if (liked !== null) {
     likeIcon.classList.add('like-icon-liked');
 }
-localStorage.getItem(FILM_KEY);
+
 likeIcon.addEventListener('click', async () => {
     if (!likeIcon.classList.contains('like-icon-liked')) {
-        localStorage.setItem(FILM_KEY, true);
+        localStorage.setItem(FILM_KEY, 'hello');
         const likesCount = parseInt(likes.textContent, 10) + 1;
 
         likes.innerText = likesCount + ' Likes';
         likeIcon.classList.add('like-icon-liked');
         likes.classList.add('like-icon-liked');
 
-        const answer = await fetch(
+        await fetch(
             `http://inno-ijl.ru/multystub/stc-21-03/film/${filmId}/like`,
             {
                 method: 'POST',
@@ -77,7 +79,6 @@ likeIcon.addEventListener('click', async () => {
 });
 
 $('.film-rate__star-list').on('click', '.film-rate__star', async function () {
-    console.log('hh')
     await fetch(`http://inno-ijl.ru/multystub/stc-21-03/film/${filmId}/rating`,
         {
             method: 'POST',
@@ -87,9 +88,9 @@ $('.film-rate__star-list').on('click', '.film-rate__star', async function () {
                 },
             body: JSON.stringify({rating: +this.dataset.value})
         });
+    await fetchFilmMeta();
 });
 
 
 fetchKinopoiskFilmData();
 fetchFilmMeta();
-
