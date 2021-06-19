@@ -6,6 +6,7 @@ import './blocks-films'
 import "./scss/main/style.scss"
 import "./films-table"
 import "./present"
+import "./city"
 
 
 $(document).ready(function(){
@@ -50,3 +51,7 @@ scrollToTop.addEventListener('click', function ()
         behavior: 'smooth',
     })
 });
+
+window.$ = window.jQuery = require('jquery');
+const fancybox = require('@fancyapps/fancybox');
+const fancyboxsCSS = require('@fancyapps/fancybox/dist/jquery.fancybox.css');

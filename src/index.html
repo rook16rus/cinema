@@ -30,7 +30,7 @@
                                                                   href="mailto:kino@innopolis.ru">kino@innopolis.ru</a></li>
                             <li class="main-nav__contact-item">
                                 <address class="main-nav__link h-card link"><span
-                                        class="p-street-address">ул.Спортивная д.1</span></address>
+                                        class="p-street-address"><span class="city_link" id="city_link" data-fancybox data-src="#city_popup"></span> ул.Спортивная д.1</span></address>
                             </li>
                         </ul>
                         <a title="Кинотеатр Иннополис" target="_blank" href="tel:88005553535"
@@ -468,6 +468,12 @@
             <button class="present-form__button button_color_green" type="submit">Отправить</button>
         </form>
     </div>
+</div>
+<div class="visually-hidden" id="city_popup">
+    <form class="city-form" action="#" method="post" id="city_form">
+        <input class="city-form__input" id="city_input" type="text">
+        <div id="search_result"></div>
+    </form>
 </div>
 <div class="to-top">
     <img src="../images/to-top.svg" height="50" alt="">

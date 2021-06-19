@@ -37,19 +37,23 @@
 
 html {
   font-size: 11px;
+  display: flex;
+  justify-content: center;
 }
 
 body {
   max-width: 1124px;
   min-width: 550px;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
 
   font-family: "IBM Plex Sans", "Arial", sans-serif;
   font-weight: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #333;
+
+  flex-grow: 1;
 }
 
 .container {
