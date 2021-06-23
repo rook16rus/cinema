@@ -27,7 +27,7 @@ function getRequest(url, callback)
 function setCity()
 {
     let res = $.parseJSON(this);
-    selectedCity = res.city.name_ru;
+    selectedCity = res.city?.name_ru ?? 'Город не определен';
     $('#city_link').html(selectedCity);
 }
 
@@ -42,9 +42,9 @@ function getCityList()
     let val = $('#city_input').val(),
         counter = 0,
         html = '<ul>';
-    for (let i = 0; i < cities.length; i++)
+    for (let i = 0; i < cities.length, counter < 5; i++)
     {
-        if (cities[i].name.toLowerCase().indexOf(val.toLowerCase()) >= 0 && counter < 5)
+        if (cities[i].name.toLowerCase().includes(val.toLowerCase()))
         {
             html += '<li>' + cities[i].name + '</li>';
             counter++
@@ -60,12 +60,11 @@ jQuery(document).ready(($) =>
 
     $(document).on('keyup', '#city_input', function ()
     {
-        let val = $(this).val();
-        if (!cities) {
-            getRequest(GLAVPUNKT_URL, setCities);
+        if (cities) {
+            getCityList();
         }
         else {
-            getCityList();
+            getRequest(GLAVPUNKT_URL, setCities);
         }
     })
 });
@@ -78,4 +77,4 @@ $('#city_link').click(function ()
 $('.city-form + .fancybox-close-small').click(function ()
 {
     $('#city_popup').addClass('visually-hidden');
-})
+});
